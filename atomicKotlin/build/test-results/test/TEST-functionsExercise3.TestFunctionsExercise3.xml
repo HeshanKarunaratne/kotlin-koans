@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="functionsExercise3.TestFunctionsExercise3" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-11T14:13:52" hostname="HESHAN-K-WL" time="0.008">
+  <properties/>
+  <testcase name="test1" classname="functionsExercise3.TestFunctionsExercise3" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
