@@ -1,14 +1,17 @@
 // Properties/Task4.kt
 package propertiesExercise4
 
+private const val i = 10
+
 class Counter {
   var value = 0
 
   fun inc() {
-    value += 10
+    value += i
+
   }
 
   fun dec() {
-    value -= 10
+    value -= i
   }
 }

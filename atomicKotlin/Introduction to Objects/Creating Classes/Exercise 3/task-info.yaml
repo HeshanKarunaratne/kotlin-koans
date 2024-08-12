@@ -4,17 +4,17 @@ files:
     visible: true
     placeholders:
       - offset: 62
-        length: 21
+        length: 296
         placeholder_text: // create Robot class
         initial_state:
           length: 21
           offset: 62
         initialized_from_dependency: false
         encrypted_possible_answer: 0UDdOqd71L4cAD5ynqUkx/wV5oDijF2U1bunb1YlG2V34ln+05x6DTckAmgpwnfem1DhX4K3KTcWPRyYkw80JFiUQhTmKhtnhjRg32esxL3VG+4RAFCNiJDHmTr/SIDzlWVJDB7bRHaAkqHzrpaDmiAdUdQ6FILjcWF+7lYlEdhQz+KnCD/D5R6M1QZdvEdZN/wCOlYMf8kHWtUOsuy8jshiioJzbkrkU5qUO0fQda+y9FvOm8rhHI35o1ImvQg/1IdQ/iT4PXlEB/jCSfD8jnHEeTPOGiCtK3R0XxyfgWBJ0jp/rixiRFyONsWWhGS49Z3Iilo/2i+iJdplMPRxgAI39F99Ui3Z9sZZRVgXHCQ=
-        selected: false
-        status: Unchecked
-      - offset: 98
-        length: 42
+        selected: true
+        status: Solved
+      - offset: 372
+        length: 41
         placeholder_text: |-
           /*
             val robot = Robot()
@@ -25,13 +25,16 @@ files:
           offset: 98
         initialized_from_dependency: false
         encrypted_possible_answer: rpZEyisp2m5dmoQXiItNBO0mXU4ql3hXdDDv9CN8YwieLzyKstSNWfhvKQKYCgo4
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Creating+Classes+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 12 Aug 2024 13:07:04 UTC"
 record: -1

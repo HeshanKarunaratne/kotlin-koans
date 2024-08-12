@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 67
-        length: 48
+        length: 46
         placeholder_text: |2-
            {
             var x = 0
@@ -15,13 +15,16 @@ files:
           offset: 67
         initialized_from_dependency: false
         encrypted_possible_answer: eaFbVhjYbKFSiKs/J3lpFC01EnlmQK1nio5hY0/fCN07r/JoqZsLlE8wqwdrm1ES
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constructors+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 12 Aug 2024 15:57:33 UTC"
 record: -1
