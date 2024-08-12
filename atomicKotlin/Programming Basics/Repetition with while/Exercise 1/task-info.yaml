@@ -4,18 +4,21 @@ files:
     visible: true
     placeholders:
       - offset: 70
-        length: 23
+        length: 182
         placeholder_text: "fun displayContent() {}"
         initial_state:
           length: 23
           offset: 70
         initialized_from_dependency: false
         encrypted_possible_answer: zQ6y2eqrVxVfGZAwHuDKykJlgqa6NahsJA5gWl/fCw5RscL827Atfe29l0MmY/ukmqTUZLG3IZpmaxWbr5BXNl1cjeZZicIfnsRemGQlJ9ULMOLUPgOlkgjNzUFFzMVOEmYy7DXBXxKyOKei4+8oTg==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 12 Aug 2024 05:25:44 UTC"
 record: -1

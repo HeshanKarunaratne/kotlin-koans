@@ -7,5 +7,5 @@ fun findMax(first: Int, second: Int): Int =
 fun main() {
   val first = 17
   val second = 31
-  TODO()
+  println("The maximum of $first and $second is "+ findMax(first, second)+ ".")
 }

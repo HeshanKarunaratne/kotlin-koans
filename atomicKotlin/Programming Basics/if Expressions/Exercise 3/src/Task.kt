@@ -1,9 +1,11 @@
 // IfExpressions/Task3.kt
 package ifExpressionsExercise3
 
-fun findMax(first: Int, second: Int): Int =
-  TODO()
+fun findMax(first: Int, second: Int): Int {
+  return if (first > second) first
+  else second
+}
 
 fun main() {
-  println(findMax(-1, 4))  // 4
+    println(findMax(-1, 4))  // 4
 }

@@ -2,6 +2,6 @@
 package numberTypesExercise5
 
 fun main() {
-  val x = 10
-  println(x + 1)
+  val value: Int = 10
+  println(value + 1)
 }

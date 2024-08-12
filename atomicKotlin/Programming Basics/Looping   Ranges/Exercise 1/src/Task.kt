@@ -2,9 +2,13 @@
 package loopingAndRangesExercise1
 
 fun factorial(n: Int): Long {
-  TODO()
+    var output: Long = 1
+    for (i in 1..n) {
+        output *= i
+    }
+    return output
 }
 
 fun main() {
-  println(factorial(10))  // 3628800
+    println(factorial(10))  // 3628800
 }

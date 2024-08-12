@@ -2,23 +2,22 @@
 package summaryIExercise4
 
 fun testLong() {
-  TODO()
+    println(Long.MAX_VALUE + 1)
 }
 
 fun testDouble() {
-  TODO()
+    println(Double.MAX_VALUE + 1)
 }
 
 fun testDouble2() {
-  TODO()
+    println(Double.MAX_VALUE == Double.MAX_VALUE + 1)
 }
 
 fun main() {
-  testLong()
-  testDouble()
-  testDouble2()
-}
-/* Output:
+    testLong()
+    testDouble()
+    testDouble2()
+}/* Output:
 -9223372036854775808
 1.7976931348623157E308
 true
