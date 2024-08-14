@@ -3,16 +3,16 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 99
-        length: 6
+      - offset: 116
+        length: 107
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 99
         initialized_from_dependency: false
         encrypted_possible_answer: 8rvipKjhMBXYJYNdCZuyqL9H9pdxCMmGwKzwIkESFGlCwSjeOi6NHEuSiknwHdZE3qziZ39A4pmy4yaktfem+e4CJwENTATk4YC5kYkTpSEd6SVgkVuQQcyODohYyMzj
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
@@ -22,5 +22,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Lists+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 13 Aug 2024 06:17:05 UTC"
 record: -1

@@ -3,21 +3,24 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 109
-        length: 6
+      - offset: 106
+        length: 36
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 109
         initialized_from_dependency: false
         encrypted_possible_answer: Hg9g+9lypRvWhW4Bp6z51a2iOKs+9xt/c0Nanqsmd1SP8X6ibA4KIYctrCoW3sI+
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Sets+%2F+Exercise2
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 13 Aug 2024 08:00:22 UTC"
 record: -1

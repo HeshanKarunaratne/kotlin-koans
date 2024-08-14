@@ -3,8 +3,8 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 147
-        length: 359
+      - offset: 561
+        length: 1
         placeholder_text: |-
           fun setFahrenheit(now: Double) {
               current = now
@@ -29,10 +29,10 @@ files:
           offset: 147
         initialized_from_dependency: false
         encrypted_possible_answer: uKTwTgF5nO4N8L7UN5FYQ+wxyoLp8Bmb4f0d9qZGPPzXarCq2qDrXheg4XjMj849hEDs4AWAqiiwG265H92rc3OtHM0VaGJKnK9klUUpLpScd9E/DI8Dch5Rig9xmFoNA+VTF77NQOBXqyt9HEQn5OneuyFeqJTWBxYsatoihy216uFWiEUYjQ2M/aXbSxTRZWbnIXDaUZ8cLtXXZbOjOSlWtGywxJZ2IJQOD/ClH0gSWo5rk6UQet1ofa2q5t6NY6TLhn9ahPggLeF3zvj163Gx0L1cc0JGM0nmH/2Sfob+vTj760deiFDKzAjdRf9R6uDC59vu/gUfl2BEvu6RSThHnMoFz32WXudSiggiPHLgYefcXfale7KEqGf85epjpOrEMgEga6eDLBz6vC/eq4K8NFSTbXbREgCEAdaL60N6RwjCWH0K8BKA33+oJqYPQTFXOy8k6QkXhQXxRVV4Lvw7nCX+gAK192DG6YxMKzrsW79Zgf7jQjTjZiBjVxk9
-        selected: false
-        status: Unchecked
-      - offset: 552
-        length: 140
+        selected: true
+        status: Solved
+      - offset: 599
+        length: 142
         placeholder_text: |-
           temp.setFahrenheit(98.6)
             temp.getFahrenheit() eq 98.6
@@ -44,11 +44,14 @@ files:
           offset: 552
         initialized_from_dependency: false
         encrypted_possible_answer: pBkxjlbH4HZzRkEtOK1ca0mE87C5mEB8Xdgh73Uh70+6r2it1/VrfTgy+giWWexc/XaP6UW1YJUf8Wvyz4jMqIy3gC6UTeT3t1F254NM0h79Z8vCoquTAd4xfeJm1wWxo35DVqru3/oXzENs2XrR/IjfUtjz7+tgk21PryXdPlI=
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 13 Aug 2024 16:09:41 UTC"
 record: -1

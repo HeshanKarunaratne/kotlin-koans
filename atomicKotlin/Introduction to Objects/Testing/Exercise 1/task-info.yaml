@@ -3,18 +3,18 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 95
-        length: 6
+      - offset: 96
+        length: 36
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 95
         initialized_from_dependency: false
         encrypted_possible_answer: 0drD5mWpSTKdBY0WngoJ3NIzAAujZYzRYRbzosrJgY2cZTB3cp2n5/ZfJrt711gx
-        selected: false
-        status: Unchecked
-      - offset: 118
-        length: 6
+        selected: true
+        status: Solved
+      - offset: 149
+        length: 13
         placeholder_text: TODO()
         initial_state:
           length: 6
@@ -22,10 +22,13 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: Hw9/ZOGfsnZhQKE4duJA8CS5r7fOyIS/a+uKUrVul7dC669F96gCwzG1uKcKZcCL
         selected: false
-        status: Unchecked
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 13 Aug 2024 05:04:08 UTC"
 record: -1

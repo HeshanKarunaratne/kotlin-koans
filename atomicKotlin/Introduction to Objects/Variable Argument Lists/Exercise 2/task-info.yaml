@@ -4,18 +4,21 @@ files:
     visible: true
     placeholders:
       - offset: 60
-        length: 18
+        length: 71
         placeholder_text: "fun printArgs() {}"
         initial_state:
           length: 18
           offset: 60
         initialized_from_dependency: false
         encrypted_possible_answer: olyhDC46T64ELVenBUiixIFP5QwO2igCkMRjnR0dr3/P/Ml0f5ojRV+miPVEmaVnxNljU6Xi889iOGC1tjw+TzJ8bQBCV0R6jUF23jDrsr4=
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 13 Aug 2024 07:41:57 UTC"
 record: -1
