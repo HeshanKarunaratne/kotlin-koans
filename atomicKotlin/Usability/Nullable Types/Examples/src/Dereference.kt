@@ -7,5 +7,5 @@ fun main() {
 
   s1.length eq 3         // [1]
   // Doesn't compile:
-  // s2.length           // [2]
+//   s2.length           // [2]
 }

@@ -5,14 +5,14 @@ fun main() {
   val s1 = "abc"             // [1]
 
   // Compile-time error:
-  // val s2: String = null   // [2]
+//   val s2: String = null   // [2]
 
   // Nullable definitions:
   val s3: String? = null     // [3]
   val s4: String? = s1       // [4]
 
   // Compile-time error:
-  // val s5: String = s4     // [5]
+//   val s5: String = s4     // [5]
   val s6 = s4                // [6]
 
   s1 eq "abc"

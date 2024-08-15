@@ -7,4 +7,5 @@ fun String?.isNullOrEmpty(): Boolean =
 
 fun main() {
   "".isNullOrEmpty() eq true
+  null.isNullOrEmpty() eq true
 }

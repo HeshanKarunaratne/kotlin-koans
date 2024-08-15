@@ -3,31 +3,34 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 144
-        length: 6
+      - offset: 202
+        length: 0
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 144
         initialized_from_dependency: false
         encrypted_possible_answer: DwPIjrdLvXGVqQqo6QXYwJ9URkF2pkvj2S1RAUhyMbwExdIjLGIpGe5R55AVZJoR3O1HVHjzHlnmpd9hjyjOig==
-        selected: false
-        status: Unchecked
-      - offset: 198
-        length: 6
+        selected: true
+        status: Solved
+      - offset: 250
+        length: 60
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 198
         initialized_from_dependency: false
         encrypted_possible_answer: DwPIjrdLvXGVqQqo6QXYwJ9URkF2pkvj2S1RAUhyMbywqhgT4A6oSb/e7es6qCoLqf6iG/H1qjk+kyYR5TsKVw==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Extensions+for+Nullable+Types+%2F+Exercise2
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 14 Aug 2024 17:53:23 UTC"
 record: -1

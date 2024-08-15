@@ -4,17 +4,17 @@ files:
     visible: true
     placeholders:
       - offset: 98
-        length: 17
+        length: 67
         placeholder_text: "fun downcase() {}"
         initial_state:
           length: 17
           offset: 98
         initialized_from_dependency: false
         encrypted_possible_answer: kThMTf/WqKXoRVZ0QUeTPU/j3l/UxM+yg6F49kCs84vYBUgtLqzEKaYKBBESKL/oZHMH6kmQerrW5k1cnCRyOg==
-        selected: false
-        status: Unchecked
-      - offset: 130
-        length: 55
+        selected: true
+        status: Solved
+      - offset: 180
+        length: 51
         placeholder_text: |-
           /*
             downcase(null) eq ""
@@ -25,11 +25,14 @@ files:
           offset: 130
         initialized_from_dependency: false
         encrypted_possible_answer: BsGfMa5xVffIZhvLtMd9aM88Te1EUpSWNK3QDLWlTqIiupj2dCqchAfaXH0Da051mtubwxAnLqGvB3t0m9UNBQ==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 14 Aug 2024 15:36:03 UTC"
 record: -1

@@ -1,6 +1,8 @@
 // SafeCallsAndElvis/Task3.kt
 package safeCallsAndTheElvisOperatorExercise3
 
+import typechecking.name
+
 data class Client(
   val name: String,
   val personalInfo: PersonalInfo? = null)
@@ -14,9 +16,16 @@ data class Address(
   val city: String? = null,
   val street: String? = null)
 
+fun exists(s: String?) = s
+  ?: "Unspecified"
 
-
-fun Client.fullInfo(): String = TODO()
+fun Client.fullInfo(): String = """
+  name: $name
+  email: ${exists(personalInfo?.email)}
+  country: ${exists(personalInfo?.address?.country)}
+  city: ${exists(personalInfo?.address?.city)}
+  street: ${exists(personalInfo?.address?.street)}
+""".trimIndent()
 
 fun main() {
   val alice = Client("Alice",

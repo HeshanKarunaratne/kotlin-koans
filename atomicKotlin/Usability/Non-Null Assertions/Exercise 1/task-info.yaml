@@ -3,28 +3,28 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 86
-        length: 12
+      - offset: 114
+        length: 50
         placeholder_text: class Rocket
         initial_state:
           length: 12
           offset: 86
         initialized_from_dependency: false
         encrypted_possible_answer: j+VzH3dI9b7+D2tjPgJ36awIWYb8PlQ6RUC0dsjWTrfRiSroWOOYWBbUuLhqoXhL
-        selected: false
-        status: Unchecked
-      - offset: 100
-        length: 15
+        selected: true
+        status: Solved
+      - offset: 166
+        length: 50
         placeholder_text: "fun launch() {}"
         initial_state:
           length: 15
           offset: 100
         initialized_from_dependency: false
         encrypted_possible_answer: IsfpNt0nSPIfqMEBr82aIjfuwFQR9M0tsCAo8k0mHs2Zsm6OiOb3FULBJsvJKbK0KkPyxpLO5RIyx5b629eG9A==
-        selected: false
-        status: Unchecked
-      - offset: 130
-        length: 119
+        selected: true
+        status: Solved
+      - offset: 230
+        length: 127
         placeholder_text: |-
           /*
             val rocket = Rocket()
@@ -38,11 +38,14 @@ files:
           offset: 130
         initialized_from_dependency: false
         encrypted_possible_answer: s/4eBrUGrEbTnkpr9W8DKucagIR0HYSRUAJqD3z9BUoiIRtMSEdQPXvY+AKhnBduOkG85mrczMXwlU1obodzvSbLlfLRs07k++B86Ob7mU4lZo09EbZNjlbNk8X/xe5yLKygs9IrcESSXaCIe5NYxKo87Y7WpOPEJCGQAYDPZ6Y=
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 14 Aug 2024 16:32:32 UTC"
 record: -1

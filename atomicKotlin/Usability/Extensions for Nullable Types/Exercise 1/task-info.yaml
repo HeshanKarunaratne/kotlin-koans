@@ -4,20 +4,23 @@ files:
     visible: true
     placeholders:
       - offset: 129
-        length: 6
+        length: 11
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 129
         initialized_from_dependency: false
         encrypted_possible_answer: DTvWEGnAKdxa6jqFH6p2Gg==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Extensions+for+Nullable+Types+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 14 Aug 2024 17:47:35 UTC"
 record: -1

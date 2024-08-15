@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 58
-        length: 30
+        length: 59
         placeholder_text: |-
           // fun zilch()
           // fun zilch2()
@@ -13,10 +13,10 @@ files:
           offset: 58
         initialized_from_dependency: false
         encrypted_possible_answer: jjLq7GajVYj0a1RIqvhpYTTDdoqo+Pzug7lQOQwKyov05BfUtW27sjmVVy6lKE8ORvlyTtGkKIkJIlSu+MDyvQ==
-        selected: false
-        status: Unchecked
-      - offset: 105
-        length: 19
+        selected: true
+        status: Solved
+      - offset: 134
+        length: 65
         placeholder_text: |-
           // var x
             // var y
@@ -25,11 +25,14 @@ files:
           offset: 105
         initialized_from_dependency: false
         encrypted_possible_answer: C3VlCVm6GvOa85rxhMQZWgXp3b5RXUqegxWmMyZEA8D/Nyl/Vld9OtjWnrfjNEeHGYzasg7gTQdaUxquXgd7IA==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 14 Aug 2024 14:48:16 UTC"
 record: -1
