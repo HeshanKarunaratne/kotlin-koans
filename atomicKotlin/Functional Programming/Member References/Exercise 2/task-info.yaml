@@ -3,21 +3,24 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 337
-        length: 54
+      - offset: 392
+        length: 0
         placeholder_text: TODO("compareByDescending(???).then(compareBy(???)))")
         initial_state:
           length: 54
           offset: 337
         initialized_from_dependency: false
         encrypted_possible_answer: rr49ZQI52+VB6buorCAmtbHNYCWODQlAFAJfKnAyBzEDbhz29Tftf068RUNlobJbbXRROzgf7XODrgbKMWSUHLvZ5kAfR7ZbkZdaw0Q856Oj6nJGV966o4frZ87h1g8T
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Functional+Programming+%2F+Member+References+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 15 Aug 2024 11:20:49 UTC"
 record: -1

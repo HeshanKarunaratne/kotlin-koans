@@ -41,5 +41,7 @@ class Robot(
 fun main() {
     val robot = Robot(10, 1, 1)
     // Should be "can't access x" error:
-//  println(robot.x)
+    robot.right(1)
+    robot.up(1)
+    println(robot)
 }

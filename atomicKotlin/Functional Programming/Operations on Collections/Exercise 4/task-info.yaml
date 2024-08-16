@@ -3,47 +3,47 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 173
-        length: 6
+      - offset: 174
+        length: 5
         placeholder_text: ' /*?*/'
         initial_state:
           length: 6
           offset: 173
         initialized_from_dependency: false
         encrypted_possible_answer: EhpmrxNKTQKREQQxBoxtuA==
-        selected: false
-        status: Unchecked
-      - offset: 186
-        length: 6
+        selected: true
+        status: Solved
+      - offset: 182
+        length: 10
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 186
         initialized_from_dependency: false
         encrypted_possible_answer: KHh1OHixMiIEqAuj4K7A1A==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
       - offset: 224
-        length: 6
+        length: 4
         placeholder_text: ' /*?*/'
         initial_state:
           length: 6
           offset: 224
         initialized_from_dependency: false
         encrypted_possible_answer: GuugSsPTk+D5DaT2pSp7cw==
-        selected: false
-        status: Unchecked
-      - offset: 236
-        length: 6
+        selected: true
+        status: Solved
+      - offset: 233
+        length: 8
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 236
         initialized_from_dependency: false
         encrypted_possible_answer: KHh1OHixMiIEqAuj4K7A1A==
-        selected: false
-        status: Unchecked
-      - offset: 315
+        selected: true
+        status: Solved
+      - offset: 308
         length: 6
         placeholder_text: ' /*?*/'
         initial_state:
@@ -52,9 +52,9 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: GuugSsPTk+D5DaT2pSp7cw==
         selected: false
-        status: Unchecked
-      - offset: 328
-        length: 6
+        status: Solved
+      - offset: 323
+        length: 11
         placeholder_text: TODO()
         initial_state:
           length: 6
@@ -62,32 +62,35 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: KHh1OHixMiIEqAuj4K7A1A==
         selected: false
-        status: Unchecked
+        status: Solved
       - offset: 363
-        length: 6
+        length: 2
         placeholder_text: ' /*?*/'
         initial_state:
           length: 6
           offset: 363
         initialized_from_dependency: false
         encrypted_possible_answer: EhpmrxNKTQKREQQxBoxtuA==
-        selected: false
-        status: Unchecked
-      - offset: 375
-        length: 6
+        selected: true
+        status: Solved
+      - offset: 370
+        length: 8
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 375
         initialized_from_dependency: false
         encrypted_possible_answer: KHh1OHixMiIEqAuj4K7A1A==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Functional+Programming+%2F+Operations+on+Collections+%2F+Exercise4
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 16 Aug 2024 12:10:06 UTC"
 record: -1

@@ -11,9 +11,11 @@ data class Message(
 fun main() {
   val messages = listOf(
     Message("Kitty", "Hey!", true),
-    Message("Kitty", "Where are you?", false))
+    Message("Kitty", "Where are you? *", false),
+    Message("Kitty", "Where are you? **", false))
   val unread =
     messages.filterNot(Message::isRead)
-  unread.size eq 1
-  unread.single().text eq "Where are you?"
+  unread.size eq 2
+  unread[0].text eq "Where are you? *"
+  unread[1].text eq "Where are you? **"
 }

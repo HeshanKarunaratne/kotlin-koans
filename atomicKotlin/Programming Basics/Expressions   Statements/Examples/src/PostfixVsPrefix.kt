@@ -7,6 +7,12 @@ fun main() {
   var j = 20
   println(++j)
   println(j)
+
+
+  var a = 10
+//  println(a++ + a + ++a + a + a++) //57
+//  println(a-- + ++a + a + ++a + a-- + a + ++a) //73
+
 }
 /* Output:
 10

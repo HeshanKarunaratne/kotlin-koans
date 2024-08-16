@@ -9,6 +9,6 @@ fun main() {
     Pair('b', 'c'),
     Pair('c', 'd'))
 
-  list.zipWithNext { a, b -> "$a$b" } eq
-    "[ab, bc, cd]"
+  list.zipWithNext { a, b -> "$a $b" } eq
+    "[a b, b c, c d]"
 }

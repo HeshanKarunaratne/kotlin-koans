@@ -30,12 +30,6 @@ fun List<Int>.myJoinToString(): String {
   return myJoinToString(", ","","")
 }
 
-
-//fun List<Int>.myJoinToString(prefix: String, postfix: String): String {
-//  TODO()
-//}
-
-
 fun main() {
   val list = listOf(1, 2, 3)
   list.myJoinToString() eq

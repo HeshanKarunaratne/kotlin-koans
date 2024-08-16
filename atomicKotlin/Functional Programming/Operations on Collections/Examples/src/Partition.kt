@@ -3,7 +3,7 @@ import atomictest.eq
 
 fun main() {
   val list = listOf(-3, -1, 5, 7, 10)
-  val isPositive = { i: Int -> i > 0 }
+  val isPositive = { it: Int -> it > 0 }
 
   list.filter(isPositive) eq "[5, 7, 10]"
   list.filterNot(isPositive) eq "[-3, -1]"

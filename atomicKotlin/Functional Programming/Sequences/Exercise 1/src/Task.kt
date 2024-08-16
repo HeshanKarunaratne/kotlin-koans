@@ -5,5 +5,7 @@ fun School.commonLessons(
   instructor: Instructor,
   student: Student
 ): Sequence<Lesson> {
-  TODO()
+  return lessons.filter {
+    instructor == it.instructor && student in it.students
+  }
 }

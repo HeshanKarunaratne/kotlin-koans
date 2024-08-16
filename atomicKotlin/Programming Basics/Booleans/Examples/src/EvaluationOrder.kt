@@ -6,7 +6,7 @@ fun main() {
   val exercise = false
   val temp = 55
 
-  // [1]:
+  // [1]: and's are evaluated first, then or's
   val happy1 = sunny && temp > 50 ||
     exercise && hoursSleep > 7
   println(happy1)

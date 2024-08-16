@@ -3,7 +3,7 @@ package lambdasExercise1
 import atomictest.eq
 
 fun transform(list: List<String>): List<Int> =
-  list.map { TODO() }
+  list.map { it.length }
 
 fun main() {
   transform(listOf("abc", "ab")) eq listOf(3, 2)

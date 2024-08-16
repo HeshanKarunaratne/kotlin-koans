@@ -21,7 +21,7 @@ files:
           offset: 118
         initialized_from_dependency: false
         encrypted_possible_answer: Hw9/ZOGfsnZhQKE4duJA8CS5r7fOyIS/a+uKUrVul7dC669F96gCwzG1uKcKZcCL
-        selected: false
+        selected: true
         status: Solved
     learner_created: false
   - name: test/Tests.kt

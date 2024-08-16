@@ -1,13 +1,14 @@
 // ManipulatingLists/Task4.kt
 package manipulatingListsExercise4
+
 import atomictest.eq
 
 class Person(
-  val name: String
+    val name: String
 ) {
-  val friends: MutableList<Person> = mutableListOf()
+    val friends: MutableList<Person> = mutableListOf()
 
-  override fun toString() = "($name, friends: ${friends.map { it.name }})"
+    override fun toString() = "($name, friends: ${friends.map { it.name }})"
 }
 
 fun friendSuggestions(person: Person): Set<Person> {
@@ -15,14 +16,16 @@ fun friendSuggestions(person: Person): Set<Person> {
 }
 
 fun main() {
-  val alice = Person("Alice")
-  val bob = Person("Bob")
-  val charlie = Person("Charlie")
+    val alice = Person("Alice")
+    val bob = Person("Bob")
+    val charlie = Person("Charlie")
 
-  alice.friends += bob
-  bob.friends += alice
+    alice.friends += bob
+
+    bob.friends += charlie
+
   bob.friends += charlie
   charlie.friends += bob
 
-  friendSuggestions(alice) eq setOf(charlie)
+    friendSuggestions(alice) eq setOf(charlie)
 }

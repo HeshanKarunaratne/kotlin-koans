@@ -11,4 +11,7 @@ fun main() {
   val m2 = m + (4 to "four")
   m2 eq mapOf(
     5 to "five", 6 to "six", 4 to "four")
+  m2 + (9 to "nine")
+  m2 eq mapOf(
+    5 to "five", 6 to "six", 4 to "four",9 to "nine")
 }
