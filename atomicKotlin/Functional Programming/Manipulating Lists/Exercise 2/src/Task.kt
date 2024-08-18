@@ -3,8 +3,7 @@ package manipulatingListsExercise2
 
 import atomictest.eq
 
-fun <T> List<T>.zipWithIndex(): List<Pair<T, Int>> =
-  TODO("mapIndexed { ??? }")
+fun <T> List<T>.zipWithIndex(): List<Pair<T, Int>> = mapIndexed { index, t -> Pair(t, index) }
 
 fun main() {
     val list = listOf('a', 'b', 'c')

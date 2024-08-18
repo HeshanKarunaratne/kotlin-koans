@@ -7,18 +7,15 @@ import atomictest.eq
 data class Person(val name: String, val age: Int)
 
 fun demographic(people: List<Person>): Map<Int, List<String>> {
-  TODO()
+    return people.groupBy { it.age }.mapValues { (_, group) -> group.map { it.name } }
 }
 
 fun main() {
     val people = listOf(
-        Person("Alice", 21),
-        Person("Bob", 25), Person("Charlie", 25)
+        Person("Alice", 21), Person("Bob", 25), Person("Charlie", 25)
     )
 
-    demographic(people) eq
-            mapOf(
-                21 to listOf("Alice"),
-                25 to listOf("Bob", "Charlie")
-            )
+    demographic(people) eq mapOf(
+        21 to listOf("Alice"), 25 to listOf("Bob", "Charlie")
+    )
 }

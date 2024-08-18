@@ -2,13 +2,11 @@
 package sequences
 import atomictest.eq
 
-fun <T> T.takeIf(
-  predicate: (T) -> Boolean
-): T? {
-  return if (predicate(this)) this else null
+fun <T> T.takeIf(predicate: (T) -> Boolean): String {
+  return if (predicate(this)) "true" else "wrong"
 }
 
 fun main() {
-  "abc".takeIf { it != "XXX" } eq "abc"
-  "XXX".takeIf { it != "XXX" } eq null
+  "abc".takeIf { it != "XXX" } eq "true"
+  "XXX".takeIf { it != "XXX" } eq "wrong"
 }

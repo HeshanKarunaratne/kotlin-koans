@@ -8,7 +8,7 @@ fun List<Int>.transformVersion1(): List<Int> =
 
 
 fun List<Int>.transformVersion2(): List<Int> =
-  mapNotNull { TODO() }
+    mapNotNull { if (it % 2 == 0) it * it else null }
 
 fun main() {
     val list = listOf(1, 2, 3)

@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 145
-        length: 2
+        length: 18
         placeholder_text: TODO()
         initial_state:
           length: 6
@@ -22,5 +22,5 @@ feedback_link: |
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 15 Aug 2024 16:24:36 UTC"
+  time: "Sat, 17 Aug 2024 09:06:57 UTC"
 record: -1

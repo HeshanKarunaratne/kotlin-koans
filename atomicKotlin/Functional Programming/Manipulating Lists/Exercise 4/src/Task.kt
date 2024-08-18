@@ -12,7 +12,8 @@ class Person(
 }
 
 fun friendSuggestions(person: Person): Set<Person> {
-  TODO()
+    val friends = person.friends.flatMap { it.friends }.toSet()
+    return (friends - person.friends - person).toSet()
 }
 
 fun main() {
@@ -24,8 +25,8 @@ fun main() {
 
     bob.friends += charlie
 
-  bob.friends += charlie
-  charlie.friends += bob
+    bob.friends += charlie
+    charlie.friends += bob
 
     friendSuggestions(alice) eq setOf(charlie)
 }

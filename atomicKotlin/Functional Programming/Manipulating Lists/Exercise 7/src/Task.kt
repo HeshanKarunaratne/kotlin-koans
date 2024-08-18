@@ -4,7 +4,7 @@ package manipulatingListsExercise7
 import atomictest.eq
 
 fun <T> List<T>.filter(f: (T) -> Boolean): List<T> =
-  flatMap { TODO() }
+    flatMap { if (f(it)) listOf(it) else emptyList() }
 
 fun main() {
     val list = listOf(1, 12, 22, 31)

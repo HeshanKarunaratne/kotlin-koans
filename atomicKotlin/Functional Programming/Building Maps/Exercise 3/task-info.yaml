@@ -3,8 +3,8 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 146
-        length: 24
+      - offset: 145
+        length: 67
         placeholder_text: TODO("groupBy(???).???")
         initial_state:
           length: 24
@@ -22,5 +22,5 @@ feedback_link: |
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Fri, 16 Aug 2024 04:04:22 UTC"
+  time: "Sat, 17 Aug 2024 14:38:48 UTC"
 record: -1

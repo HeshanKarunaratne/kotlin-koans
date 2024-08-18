@@ -9,4 +9,6 @@ fun main() {
     .map(Int::square)
   r.toString().substringBefore("@") eq
     "kotlin.sequences.TransformingSequence"
+  println("...")
+  println(r.toList())
 }

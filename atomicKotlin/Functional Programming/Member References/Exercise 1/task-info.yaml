@@ -3,18 +3,18 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 380
-        length: 6
+      - offset: 389
+        length: 41
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 380
         initialized_from_dependency: false
         encrypted_possible_answer: 8j9dWegphZmMP/0xKcdj7d5YRQtQyoZ3CAHlmvP6IEQ=
-        selected: false
+        selected: true
         status: Solved
-      - offset: 431
-        length: 6
+      - offset: 473
+        length: 42
         placeholder_text: TODO()
         initial_state:
           length: 6
@@ -23,8 +23,8 @@ files:
         encrypted_possible_answer: nQ3qLwfiwjaV/f45C4nXreXI6lLLzuy0eiRhSDJP6ZE=
         selected: true
         status: Solved
-      - offset: 484
-        length: 6
+      - offset: 560
+        length: 47
         placeholder_text: TODO()
         initial_state:
           length: 6
@@ -33,8 +33,8 @@ files:
         encrypted_possible_answer: IhEUyOlj5lPT/A9ZDadmSzUj1kcEQw+u7xLsKCePOio=
         selected: true
         status: Solved
-      - offset: 560
-        length: 6
+      - offset: 722
+        length: 0
         placeholder_text: TODO()
         initial_state:
           length: 6
@@ -50,5 +50,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 15 Aug 2024 11:16:13 UTC"
+  time: "Fri, 16 Aug 2024 12:56:55 UTC"
 record: -1

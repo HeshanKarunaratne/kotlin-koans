@@ -6,9 +6,12 @@ import atomictest.eq
 fun <T, R : Any> Iterable<T>.mapIndexedNotNull(
     transform: (Int, T) -> R?
 ): List<R> {
-  val result = mutableListOf<R>()
-  TODO()
-  return result
+    val result = mutableListOf<R>()
+    for ((index, element) in withIndex()) {
+        val s = transform(index, element)
+        if (s != null) result += s
+    }
+    return result
 }
 
 fun main() {

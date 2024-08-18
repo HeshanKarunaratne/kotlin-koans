@@ -3,8 +3,8 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 318
-        length: 6
+      - offset: 380
+        length: 54
         placeholder_text: TODO()
         initial_state:
           length: 6
@@ -22,5 +22,5 @@ feedback_link: |
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 15 Aug 2024 18:41:22 UTC"
+  time: "Sat, 17 Aug 2024 11:15:42 UTC"
 record: -1

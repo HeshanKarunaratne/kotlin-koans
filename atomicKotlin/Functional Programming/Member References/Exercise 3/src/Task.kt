@@ -6,18 +6,17 @@ import atomictest.eq
 val Int.isEven: Boolean
     get() = this % 2 == 0
 
-// Returns all the divisors of the number
-// except 1 and the number itself
 private fun getNonTrivialDivisors(num: Int): List<Int> {
-  TODO()
+    val list = (2 until num).filter { num % it == 0 }
+    return list
 }
 
 fun Int.isPrime(): Boolean {
-  TODO()
+    return this != 1 && getNonTrivialDivisors(this).isEmpty()
 }
 
 fun isPerfect(num: Int): Boolean {
-    return num == getNonTrivialDivisors(num).sum()
+    return num != 1 && 1 + getNonTrivialDivisors(num).sum() == num
 }
 
 fun main() {

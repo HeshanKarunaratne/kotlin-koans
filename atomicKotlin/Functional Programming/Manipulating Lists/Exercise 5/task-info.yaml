@@ -3,8 +3,8 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 169
-        length: 0
+      - offset: 142
+        length: 24
         placeholder_text: TODO("???.flatten()")
         initial_state:
           length: 21
@@ -22,5 +22,5 @@ feedback_link: |
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 15 Aug 2024 18:53:37 UTC"
+  time: "Sat, 17 Aug 2024 11:30:03 UTC"
 record: -1

@@ -3,8 +3,8 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 272
-        length: 6
+      - offset: 86
+        length: 239
         placeholder_text: TODO()
         initial_state:
           length: 6
@@ -13,8 +13,8 @@ files:
         encrypted_possible_answer: SMmCS6W5MFscfZAP+EsFZP7kThBwQyKmXZJXvj4zg48ny8QkDFxRQra8oHkvZqKX
         selected: true
         status: Solved
-      - offset: 310
-        length: 9
+      - offset: 347
+        length: 28
         placeholder_text: TODO()
         initial_state:
           length: 6
@@ -23,7 +23,7 @@ files:
         encrypted_possible_answer: aKuNO0/V3mHj7cx4wTdKeV+GCYJl2powJ/qPhpvEHJDgNLVnoNNUc1eX6SQwYDfqhC+Eb4MLq/m9BrFSPwlUWA==
         selected: true
         status: Solved
-      - offset: 408
+      - offset: 463
         length: 0
         placeholder_text: TODO()
         initial_state:
@@ -33,7 +33,7 @@ files:
         encrypted_possible_answer: 95mU36NkXd8n96J7Pyi9wNNaXf4ZehETJDpOQ7nmUTaAlJiVFs10mPSToEI+HqkaC4U1rIxGwmx8CeV2zx3E9g==
         selected: true
         status: Solved
-      - offset: 477
+      - offset: 531
         length: 11
         placeholder_text: TODO()
         initial_state:
@@ -43,7 +43,7 @@ files:
         encrypted_possible_answer: 6rdoLh4ZcPopHOjpkbowUA==
         selected: true
         status: Solved
-      - offset: 541
+      - offset: 595
         length: 12
         placeholder_text: TODO()
         initial_state:
@@ -53,7 +53,7 @@ files:
         encrypted_possible_answer: KeUExcOBBw2SCVKocxfSBw==
         selected: true
         status: Solved
-      - offset: 718
+      - offset: 772
         length: 11
         placeholder_text: TODO()
         initial_state:
