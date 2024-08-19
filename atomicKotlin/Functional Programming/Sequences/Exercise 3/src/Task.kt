@@ -1,17 +1,6 @@
 // Sequences/Task3.kt
 package sequencesExercise3
 
-fun School.averageInstructorRating(instructor: Instructor): Double
-//  lessons
-//    .filter { it.instructor == instructor }
-//    .flatMap { it.rating.values.asSequence() }
-//    .average()
-  {
+fun School.averageInstructorRating(instructor: Instructor): Double =
+    lessons.filter { it.instructor == instructor }.flatMap { it.rating.values.asSequence() }.average()
 
-    lessons
-      .filter { it.instructor == instructor }
-      .flatMap { it.rating.values.asSequence() }
-
-
-    return 0.0
-  }

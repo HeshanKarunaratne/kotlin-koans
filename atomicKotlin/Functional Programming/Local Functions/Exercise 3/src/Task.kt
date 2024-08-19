@@ -1,9 +1,20 @@
 // LocalFunctions/Task3.kt
 package localFunctionsExercise3
+
 import atomictest.eq
 
 fun createContainer(): Pair<(Int) -> Unit, () -> Int?> {
-    TODO()
+    var i: Int? = null
+    fun add(value: Int) {
+        i = value
+    }
+
+    fun remove(): Int? {
+        val result = i
+        i = null
+        return result
+    }
+    return Pair(::add, ::remove)
 }
 
 fun main() {

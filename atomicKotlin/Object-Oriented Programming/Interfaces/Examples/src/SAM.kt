@@ -12,3 +12,7 @@ fun interface OneArg {
 fun interface TwoArg {
   fun h(i: Int, j: Int): Int
 }
+
+fun interface ThreeArg {
+  fun i(i: Int, j: Int, k: Int): Int
+}

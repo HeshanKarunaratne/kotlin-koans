@@ -1,14 +1,16 @@
 // Recursion/Task1.kt
 package recursionExercise1
-import atomictest.*
+
+import atomictest.trace
 
 tailrec fun simulation(group: String, level: Int) {
-  TODO()
+    trace("Simulation: $group Reality: $level")
+    if (level > 0) simulation(group, level - 1)
 }
 
 fun main() {
-  simulation("FOO", 10)
-  trace eq """
+    simulation("FOO", 10)
+    trace eq """
     Simulation: FOO Reality: 10
     Simulation: FOO Reality: 9
     Simulation: FOO Reality: 8

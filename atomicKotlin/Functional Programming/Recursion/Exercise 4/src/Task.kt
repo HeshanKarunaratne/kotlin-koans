@@ -21,7 +21,7 @@ fun City.allReachableRecursive(): Set<City> {
   // Add all connections reachable
   // from 'current' city to 'connections' Set
   fun addConnectionsFrom(current: City) {
-    TODO()
+    connections.add(current)
   }
 
   addConnectionsFrom(this)

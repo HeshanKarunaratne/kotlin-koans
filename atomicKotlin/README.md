@@ -397,7 +397,139 @@ sequence.take(3).toList() eq listOf(1, 2, 3)
 
 // This is like writing a for loop that starts from 6 that goes down to 0
 generateSequence(6) { (it - 1).takeIf { it >= 0 } }.toList()
-eq listOf (6, 5, 4, 3, 2, 1, 0)
+
+// You can write lambdas in below way as well
+fun fibonacci(): Sequence<Int> {
+    var previous = 1
+    return generateSequence(0) {
+        val next = previous + it
+        previous = it
+        next
+    }
+}
+```
+
+#### Local Functions
+
+```kt
+val logMsg = StringBuilder()
+fun log(message: String) = logMsg.appendLine(message)
+log("Starting computation")
+val x = 42
+log("Computation result: $x")
+
+// Local Extension
+fun String.exclaim() = "$this!"
+"Hello".exclaim() eq "Hello!"
+
+// Local function reference
+fun interesting(session: Session): Boolean {
+    return session.title.contains("Kotlin")
+}
+sessions.any(::interesting) eq true
+```
+
+#### Folding Lists
+```kt
+val list = listOf(1, 10, 100, 1000)
+list.fold(0) { sum, n -> sum + n } eq 1111
+
+// Fold and FoldRight
+val list2 = listOf('a', 'b', 'c', 'd')
+list2.fold("*") { acc, elem -> "($acc) + $elem" } eq
+        "((((*) + a) + b) + c) + d"
+list2.foldRight("*") { elem, acc -> "$elem + ($acc)" } eq 
+        "a + (b + (c + (d + (*))))"
+
+// Reduce and ReduceRight
+val chars = "A B C D E".split(" ")
+chars.reduce { acc, e -> "$acc $e" } eq "A B C D E"
+chars.reduceRight { e, acc -> "$acc $e" } eq "E D C B A"
+```
+
+##### Object Oriented Programming
+#### Interfaces
+```kt
+// Functions
+interface Computer {
+  fun prompt(): String 
+  fun calculateAnswer(): Int
+}
+
+class Desktop : Computer {
+  override fun prompt() = "Hello!"
+  override fun calculateAnswer() = 11
+}
+
+val computers = listOf(Desktop(), DeepThought(), Quantum())
+computers.map { it.calculateAnswer() } eq "[11, 42, -1]"
+computers.map { it.prompt() } eq "[Hello!, Thinking..., Probably...]"
+
+// Property
+interface Player {
+    val symbol: Char
+}
+
+class Food : Player {
+    override val symbol = '.'
+}
+
+// overriding as constructor parameter
+class Wall(override val symbol: Char) : Player
+
+// Enum overriding
+interface Hotness {
+    fun feedback(): String
+}
+
+enum class SpiceLevel : Hotness{
+    Mild {
+        override fun feedback() =
+            "It adds flavor!"
+    },
+    Medium {
+        override fun feedback() =
+            "Is it warm in here?"
+    }
+}
+
+// SAM - Single Abstract Method
+fun interface OneArg {
+    fun g(n: Int): Int
+}
+
+class VerboseOne : OneArg {
+    override fun g(n: Int) = n + 47
+}
+val verboseOne = VerboseOne()
+// You can pass a lambda as the argument
+val samOne = OneArg { it + 47 }
+```
+
+#### Constructors
+```kt
+// If you are adding more secondary constructors it should go to the init constructor always
+class WithSecondary(i: Int) {
+  init {
+    trace("Primary: $i")
+  }
+  constructor(c: Char) : this(c - 'A') {
+    trace("Secondary char: '$c'")
+  }
+  constructor(s: String) :
+    this(s.first()) {             // [1]
+    trace("Secondary string: \"$s\"")
+  }
+}
+```
+
+#### Inheritance
+```kt
+// if a class is final or not open then it cannot be inherited
+open class Base
+class Derived : Base()
+
+
 ```
 
 #### Lambdas

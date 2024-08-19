@@ -13,12 +13,11 @@ class WithSecondary(i: Int) {
     this(s.first()) {             // [1]
     trace("Secondary: \"$s\"")
   }
-  /* Doesn't compile without a call
-     to the primary constructor:
-  constructor(f: Float) {         // [2]
-    trace("Secondary: $f")
+
+  constructor(f: Float) : this(26) {
+    trace("Secondary float: $f")
   }
-  */
+
 }
 
 fun main() {
@@ -28,6 +27,8 @@ fun main() {
   WithSecondary('D')
   sep()
   WithSecondary("Last Constructor")
+  sep()
+  WithSecondary(26.0F)
   trace eq """
     Primary: 1
     ----------
@@ -37,5 +38,8 @@ fun main() {
     Primary: 11
     Secondary: 'L'
     Secondary: "Last Constructor"
+    ----------
+    Primary: 26
+    Secondary float: 26.0
   """
 }

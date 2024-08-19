@@ -1,4 +1,15 @@
-tionExercise3TaskKt
+TaskKt
+8
+abstractclassesImplementationsKtPropertyAccessorKt
+ 
+abstractstateStateOfAClassKt
+
+
+atomictestAtomicTestKt
+*
+ baseClassInitializationExercise2TaskKt
+*
+ baseClassInitializationExercise3TaskKt
 :
 baseclassinitGreatApe3KtHouseKtOtherConstructorsKt
 
@@ -839,209 +850,18 @@ K
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     faultargumentsWithoutDefaultArgumentsKt
+UnSealedKt" *     umentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     essionsExercise4TaskKt
-K
-whenexpressionsAnalyzeInputKt	BmiWhenKtGermanOrdinalsKtMixColorsKt
-.
-withdefaultargumentsWithDefaultArgumentsKt
-#
-withnullAverageIncomeWithNullKt
+UnSealedKt" *     withnullAverageIncomeWithNullKt
 4
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     enKtGermanOrdinalsKtMixColorsKt
-.
-withdefaultargumentsWithDefaultArgumentsKt
-#
-withnullAverageIncomeWithNullKt
-4
-withoutdefaultargumentsWithoutDefaultArgumentsKt
+UnSealedKt" *     ithoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     outDefaultArgumentsKt
-"
-withoutsealedclasses
-UnSealedKt" *     ercise4TaskKt
-K
-whenexpressionsAnalyzeInputKt	BmiWhenKtGermanOrdinalsKtMixColorsKt
-.
-withdefaultargumentsWithDefaultArgumentsKt
-#
-withnullAverageIncomeWithNullKt
-4
-withoutdefaultargumentsWithoutDefaultArgumentsKt
-"
-withoutsealedclasses
-UnSealedKt" *     3TaskKt
-
-overloadingExercise4TaskKt
-4
-overloadingvsdefaultargsOverloadedVsDefaultArgKt
-
-packagesExercise1TaskKt
-
-packagesExercise3TaskKt
-
-packagesExercise4TaskKt
-$
-polymorphismFantasyGameKtPetKt
-
-polymorphismExercise1TaskKt
-
-polymorphismExercise2TaskKt
-
-polymorphismExercise3TaskKt
-/
-properexceptionAverageIncomeWithExceptionKt
-
-propertiesExercise1TaskKt
-
-propertiesExercise2TaskKt
-
-propertiesExercise3TaskKt
-
-propertiesExercise4TaskKt
-$
-propertyAccessorsExercise1TaskKt
-$
-propertyAccessorsExercise2TaskKt
-$
-propertyAccessorsExercise3TaskKt
-$
-propertyAccessorsExercise4TaskKt
-$
-propertyAccessorsExercise5TaskKt
-%
-propertyDelegationExercise1TaskKt
-%
-propertyDelegationExercise2TaskKt
-%
-propertyDelegationExercise3TaskKt
-*
- propertyDelegationToolsExercise1TaskKt
-*
- propertyDelegationToolsExercise2TaskKt
-*
- propertyDelegationToolsExercise3TaskKt
-*
- propertyDelegationToolsExercise4TaskKt
-K
-propertyaccessors	CounterKtDataKt	DefaultKt
-HamstersKtLogChangesKt
-™
-propertydelegationAccessibilityKtBasicRead2KtBasicReadKtBasicReadWrite2KtBasicReadWriteKtCarServiceKtConfigurationKtFibonacciPropertyKt
-
-propertydelegation2AddKt
-Z
-	recursionCallStackKtFactorialKtFibonacciKtInfiniteRecursionKtRecursionLimitsKt
-
-recursionExercise1TaskKt
-
-recursionExercise2TaskKt
-
-recursionExercise3TaskKt
-
-recursionExercise4TaskKt
-&
-repetitionWithWhileExercise1TaskKt
-&
-repetitionWithWhileExercise2TaskKt
-&
-repetitionWithWhileExercise3TaskKt
-&
-repetitionWithWhileExercise4TaskKt
-&
-repetitionWithWhileExercise5TaskKt
-"
-resourceCleanupExercise1TaskKt
-"
-resourceCleanupExercise3TaskKt
-
-resourcecleanupUsableKt
-/
-%safeCallsAndTheElvisOperatorExercise1TaskKt
-/
-%safeCallsAndTheElvisOperatorExercise2TaskKt
-/
-%safeCallsAndTheElvisOperatorExercise3TaskKt
-E
-	safecallsChainedCallsKtElvisCallKt
-SafeCallKtSafeOperationKt
-
-sandwich
-SandwichKt
-!
-scopeFunctionsExercise1TaskKt
-!
-scopeFunctionsExercise2TaskKt
-!
-scopeFunctionsExercise3TaskKt
-r
-scopefunctionsAndNullabilityKtBlobKtDifferencesKtGnomeKtMapLookupKt	NameTagKt	NestingKtNullGnomeKt
- 
-sealedClassesExercise1TaskKt
- 
-sealedClassesExercise2TaskKt
- 
-sealedClassesExercise3TaskKt
-H
-sealedclassesSealedClassesKtSealedSubclassesKtSealedVsAbstractKt
-(
-secondaryConstructorsExercise1TaskKt
-(
-secondaryConstructorsExercise2TaskKt
-(
-secondaryConstructorsExercise3TaskKt
-6
-secondaryconstructorsGardenItemKtWithSecondaryKt
-4
-	sequencesDefineTakeIfKtEagerVsLazyEvaluationKt
-
-sequencesExercise1TaskKt
-
-sequencesExercise2TaskKt
-
-sequencesExercise3TaskKt
-
-sequencesExercise4TaskKt
-
-sequencesExercise5TaskKt
-
-sequencesExercise6TaskKt
-
-sequencesExercise7TaskKt
-
-sequencesExercise8TaskKt
-
-setsExercise1TaskKt
-
-setsExercise2TaskKt
-
-setsExercise3TaskKt
-
-setsExercise4TaskKt
-$
-slowfibonacciVerySlowFibonacciKt
-
-
-stacktraceStacktraceKt
-"
-stringTemplatesExercise1TaskKt
-"
-stringTemplatesExercise2TaskKt
-"
-stringTemplatesExercise3TaskKt
-"
-stringTemplatesExercise4TaskKt
-"
-stringTemplatesExercise5TaskKt
-¶
-summary2BoxesKtClassBodiesKt
-ColorSetKtExplicitTypingKtGetterAndSetterKt	JetPackKtPropertyReadWriteKtQuadraticKtTemperatureKtTicTacToeKt	VarArgsKtWildAnimalsKt
+UnSealedKt" *     WriteKtQuadraticKtTemperatureKtTicTacToeKt	VarArgsKtWildAnimalsKt
 
 summaryIExercise1TaskKt
 
@@ -1195,7 +1015,192 @@ K
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     secondaryConstructorsExercise2TaskKt
+UnSealedKt" *     cise2TaskKt
+ 
+nullableTypesExercise3TaskKt
+>
+nullableextensionsNullableExtensionKtNullableParameterKt
+
+nullabletypesAmphibianKt
+
+numberTypesExercise1TaskKt
+
+numberTypesExercise2TaskKt
+
+numberTypesExercise3TaskKt
+
+numberTypesExercise4TaskKt
+
+numberTypesExercise5TaskKt
+@
+objectsObjectInheritanceKtObjectKeywordKtObjectNestingKt
+$
+objectsEverywhereExercise1TaskKt
+$
+objectsEverywhereExercise2TaskKt
+$
+objectsEverywhereExercise3TaskKt
+$
+objectsEverywhereExercise4TaskKt
+$
+objectsEverywhereExercise5TaskKt
+
+objectsExercise1TaskKt
+
+objectsExercise2TaskKt
+
+objectsExercise3TaskKt
+
+objectshare1Share1Kt
+
+objectshare2Share2Kt
+*
+ operationsOnCollectionsExercise1TaskKt
+*
+ operationsOnCollectionsExercise2TaskKt
+*
+ operationsOnCollectionsExercise3TaskKt
+*
+ operationsOnCollectionsExercise4TaskKt
+8
+operationsoncollectionsByOperationsKtPairOfListsKt
+&
+operatorOverloadingExercise1TaskKt
+&
+operatorOverloadingExercise2TaskKt
+&
+operatorOverloadingExercise3TaskKt
+ª
+operatoroverloadingArithmeticOperatorsKtBackticksKtComparisonKtConfusingPrecedenceKtContainerAccessKtDefaultEqualityKtDefiningEqualityKtDifferentTypesKtEqualsForNullableKtInvokeFunctionTypeKtInvokeKtMemberOperatorKt
+MoleculeKtNumKtRangesKtStringInvokeKt
+SwearingKt
+
+otherQuoteKt
+C
+overloadingMemberVsExtensionKtOverloadingAddKtOverloadingKt
+
+overloadingExercise1TaskKt
+
+overloadingExercise2TaskKt
+
+overloadingExercise3TaskKt
+
+overloadingExercise4TaskKt
+4
+overloadingvsdefaultargsOverloadedVsDefaultArgKt
+
+packagesExercise1TaskKt
+
+packagesExercise3TaskKt
+
+packagesExercise4TaskKt
+$
+polymorphismFantasyGameKtPetKt
+
+polymorphismExercise1TaskKt
+
+polymorphismExercise2TaskKt
+
+polymorphismExercise3TaskKt
+/
+properexceptionAverageIncomeWithExceptionKt
+
+propertiesExercise1TaskKt
+
+propertiesExercise2TaskKt
+
+propertiesExercise3TaskKt
+
+propertiesExercise4TaskKt
+$
+propertyAccessorsExercise1TaskKt
+$
+propertyAccessorsExercise2TaskKt
+$
+propertyAccessorsExercise3TaskKt
+$
+propertyAccessorsExercise4TaskKt
+$
+propertyAccessorsExercise5TaskKt
+%
+propertyDelegationExercise1TaskKt
+%
+propertyDelegationExercise2TaskKt
+%
+propertyDelegationExercise3TaskKt
+*
+ propertyDelegationToolsExercise1TaskKt
+*
+ propertyDelegationToolsExercise2TaskKt
+*
+ propertyDelegationToolsExercise3TaskKt
+*
+ propertyDelegationToolsExercise4TaskKt
+K
+propertyaccessors	CounterKtDataKt	DefaultKt
+HamstersKtLogChangesKt
+™
+propertydelegationAccessibilityKtBasicRead2KtBasicReadKtBasicReadWrite2KtBasicReadWriteKtCarServiceKtConfigurationKtFibonacciPropertyKt
+
+propertydelegation2AddKt
+Z
+	recursionCallStackKtFactorialKtFibonacciKtInfiniteRecursionKtRecursionLimitsKt
+
+recursionExercise1TaskKt
+
+recursionExercise2TaskKt
+
+recursionExercise3TaskKt
+
+recursionExercise4TaskKt
+&
+repetitionWithWhileExercise1TaskKt
+&
+repetitionWithWhileExercise2TaskKt
+&
+repetitionWithWhileExercise3TaskKt
+&
+repetitionWithWhileExercise4TaskKt
+&
+repetitionWithWhileExercise5TaskKt
+"
+resourceCleanupExercise1TaskKt
+"
+resourceCleanupExercise3TaskKt
+
+resourcecleanupUsableKt
+/
+%safeCallsAndTheElvisOperatorExercise1TaskKt
+/
+%safeCallsAndTheElvisOperatorExercise2TaskKt
+/
+%safeCallsAndTheElvisOperatorExercise3TaskKt
+E
+	safecallsChainedCallsKtElvisCallKt
+SafeCallKtSafeOperationKt
+
+sandwich
+SandwichKt
+!
+scopeFunctionsExercise1TaskKt
+!
+scopeFunctionsExercise2TaskKt
+!
+scopeFunctionsExercise3TaskKt
+r
+scopefunctionsAndNullabilityKtBlobKtDifferencesKtGnomeKtMapLookupKt	NameTagKt	NestingKtNullGnomeKt
+ 
+sealedClassesExercise1TaskKt
+ 
+sealedClassesExercise2TaskKt
+ 
+sealedClassesExercise3TaskKt
+H
+sealedclassesSealedClassesKtSealedSubclassesKtSealedVsAbstractKt
+(
+secondaryConstructorsExercise1TaskKt
+(
+secondaryConstructorsExercise2TaskKt
 (
 secondaryConstructorsExercise3TaskKt
 6
