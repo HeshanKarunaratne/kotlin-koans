@@ -529,7 +529,194 @@ class WithSecondary(i: Int) {
 open class Base
 class Derived : Base()
 
+// Base Class initialization
+open class SuperClass1(val i: Int)
+class SubClass1(i: Int) : SuperClass1(i)
+```
 
+#### Abstract Classes
+```kt
+abstract class WithProperty {
+    abstract val x: Int
+}
+
+abstract class WithFunctions {
+    abstract fun f(): Int
+}
+
+// Interface is fully abstract class, so no need to define abstract keyword
+// In Interface you can write a body as well
+interface Parent {
+    val ch: Char
+    fun f(): Int
+    fun g() = "ch = $ch; f() = ${f()}"
+}
+
+// Multiple Inheritance is achieved through interfaces
+interface Animal
+interface Mammal: Animal
+interface AquaticAnimal: Animal
+
+class Dolphin : Mammal, AquaticAnimal
+
+// Polymorphism
+open class Pet {
+    open fun speak() = "Pet"
+}
+class Dog : Pet() {
+    override fun speak() = "Bark!"
+}
+class Cat : Pet() {
+    override fun speak() = "Meow"
+}
+fun talk(pet: Pet) = pet.speak()
+
+// Composition
+interface Building
+interface Kitchen
+
+interface House: Building {
+    val kitchen1: Kitchen
+    val kitchen2: Kitchen
+}
+
+// Inheritance and Extensions
+fun Heater.cool(temperature: Int) =
+    "cooling to $temperature"
+
+fun warmAndCool(heater: Heater) {
+    heater.heat(70) eq "heating to 70"
+    heater.cool(60) eq "cooling to 60"
+}
+```
+
+#### Class Delegation
+```kt
+interface Logger {
+    fun log(message: String)
+}
+
+class ConsoleLogger : Logger {
+    override fun log(message: String) {
+        println("Console: $message")
+    }
+}
+
+class AdvancedLogger(logger: Logger) : Logger by logger {
+    fun logError(error: String) {
+        log("ERROR: $error")
+    }
+}
+
+fun main() {
+    val consoleLogger = ConsoleLogger()
+    val advancedLogger = AdvancedLogger(consoleLogger)
+    consoleLogger.log("console logger")
+    advancedLogger.log("This is a standard log message.")
+    advancedLogger.logError("This is an error message.")
+}
+```
+
+#### Downcasting
+```kt
+// When you upcast if any method that doesn't available in the superclass cannot be invoked with subclass 
+val b1: Base = Derived1() // Upcast
+if(b1 is Derived1){ // Downcast
+    b1.g()
+}
+
+// Safe casting with as?
+fun dogBarkSafe(c: Creature) =
+    (c as? Dog)?.bark() ?: "Not a Dog"
+
+fun main() {
+    dogBarkSafe(Dog()) eq "Yip!"
+    dogBarkSafe(Human()) eq "Not a Dog"
+}
+
+// Find
+val group: List<Creature> = listOf(
+    Human(), Human(), Dog(), Alien(), Dog()
+)
+
+val dog = group
+    .find { it is Dog } as Dog?
+dog?.bark() eq "Yip!"
+
+// Filtering
+val humans1: List<Creature> =
+    group.filter { it is Human }
+humans1.size eq 2
+val humans2: List<Human> =
+    group.filterIsInstance<Human>()
+humans2 eq humans1
+```
+
+#### Sealed Classes
+```kt
+// All direct subclasses of a sealed class must be declared in the same file as the sealed class. This ensures that the set of subclasses is known and controlled.
+sealed class Transport
+
+data class Train(
+    val line: String
+) : Transport()
+
+data class Bus(
+    val number: String,
+    val capacity: Int
+) : Transport()
+
+fun travel(transport: Transport) =
+    when (transport) {
+        is Train ->
+            "Train ${transport.line}"
+        is Bus ->
+            "Bus ${transport.number}: " +
+                    "size ${transport.capacity}"
+        else -> ""
+    }
+
+listOf(Train("S1"), Bus("11", 90)).map(::travel) eq "[Train S1, Bus 11: size 90]"
+
+
+
+```
+
+#### Sealed vs Abstract classes
+- Sealed classes restrict the subclasses to a single file, while abstract classes do not.
+- Neither sealed nor abstract classes can be instantiated directly, but abstract classes are more flexible in terms of inheritance.
+- Sealed classes are commonly used in scenarios where you have a known set of possible types (e.g., representing states or outcomes), while abstract classes are used to define a common interface or base class for related classes.
+
+#### Lambdas
+```text
+Similarities Between Concrete, Abstract, Sealed Classes, and Interfaces
+
+1. Inheritance: All four (concrete classes, abstract classes, sealed classes, and interfaces) can be used as super types for other classes or interfaces.
+2. Type Safety: All four ensure type safety and help define contracts or hierarchies that are enforced at compile-time.
+3. Default Implementations: All four can provide default method implementations. Abstract and concrete classes can do this with regular methods, while interfaces can do it using default methods.
+
+Differences Between Concrete, Abstract, Sealed Classes, and Interfaces
+
+1. Concrete Class
+- A regular class that can be instantiated and used directly
+- Can be inherited by other classes if marked as open
+- Cannot be inherited by other classes if marked as final
+- The inheriting class can override methods that are open for overriding
+
+2. Abstract Class
+- A class that cannot be instantiated directly. It can have both abstract (unimplemented) methods and concrete (implemented) methods
+- Must be inherited by a subclass, which should provide implementations for the abstract methods
+- Cannot add 'open' which is redundant and 'final' which is incompatible
+
+3. Sealed Class
+- A class that restricts inheritance. All subclasses must be defined in the same file.
+- Can only be inherited within the same file where the sealed class is defined. The number of subclasses is known and controlled.
+- Cannot be instantiated directly
+
+4. Interface
+- A contract that can be implemented by classes or other interfaces. It can declare abstract methods and properties, as well as provide default implementations.
+- Can be implemented by any class, including abstract, sealed, or concrete classes, and can also extend other interfaces.
+- Cannot be instantiated directly
 ```
 
 #### Lambdas

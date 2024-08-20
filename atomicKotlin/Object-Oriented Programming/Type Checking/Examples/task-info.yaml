@@ -24,6 +24,12 @@ files:
   - name: src/BeverageContainer3.kt
     visible: true
     learner_created: false
-status: Unchecked
+  - name: src/ex/ex1/ConcreateSealAbstractInterface.kt
+    visible: true
+    learner_created: true
+  - name: src/ex/ex2/CheckSealed.kt
+    visible: true
+    learner_created: true
+status: Solved
 record: -1
 post_submission_on_open: true

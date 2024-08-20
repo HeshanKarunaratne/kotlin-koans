@@ -6,6 +6,6 @@ fun main() {
   if(b1 is Derived1)
     b1.g() // Within scope of "is" check
   val b2: Base = Derived2() // Upcast
-  if(b2 is Derived2)
-    b2.h() // Within scope of "is" check
+  if(b2 is Derived1)
+    b2.g() // Within scope of "is" check
 }
