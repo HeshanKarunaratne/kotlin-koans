@@ -21,6 +21,9 @@ files:
   - name: src/FillIt.kt
     visible: true
     learner_created: false
-status: Unchecked
+  - name: src/NestedAndInnerExample.kt
+    visible: true
+    learner_created: true
+status: Solved
 record: -1
 post_submission_on_open: true

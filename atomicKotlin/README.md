@@ -719,6 +719,158 @@ Differences Between Concrete, Abstract, Sealed Classes, and Interfaces
 - Cannot be instantiated directly
 ```
 
+#### Objects
+```kt
+// Define Objects
+object JustOne {
+    val n = 2
+    fun f() = n * 10
+    fun g() = this.n * 20
+}
+
+fun main() {
+    // val x = JustOne() // Error
+    JustOne.n eq 2
+    JustOne.f() eq 20
+    JustOne.g() eq 40
+}
+
+//Inheritance
+open class Paint(val color: String) {
+    open fun apply() = "Applying $color"
+}
+
+object Acrylic: Paint("Blue") {
+    override fun apply() =
+        "Acrylic, ${super.apply()}"
+}
+
+interface PaintPreparation {
+    fun prepare(): String
+}
+
+object Prepare: PaintPreparation {
+    override fun prepare() = "Scrape"
+}
+
+fun main() {
+    Prepare.prepare() eq "Scrape"
+    Paint("Green").apply() eq "Applying Green"
+    Acrylic.apply() eq "Acrylic, Applying Blue"
+}
+
+// Object nesting - Object nesting refers to the practice of defining an object inside another object, class
+
+//Helpful for organizing related singletons within a common namespace
+object Outer {
+    object Nested {
+        val a = "Outer.Nested.a"
+    }
+}
+
+//Useful for associating a singleton with a specific class.
+class HasObject {
+    object Nested {
+        val a = "HasObject.Nested.a"
+    }
+}
+
+//Allows for defining static-like members in a class
+class MyClass {
+    companion object {
+        fun companionMethod() = "Hello from Companion Object"
+    }
+}
+
+fun main() {
+    Outer.Nested.a eq "Outer.Nested.a"
+    HasObject.Nested.a eq "HasObject.Nested.a"
+    println(MyClass.companionMethod())
+}
+```
+
+#### Nested Classes
+Nested classes are classes defined within another class. There are two types of nested classes: Regular nested classes and Inner classes.
+```kt
+
+// 1. Regular Nested Class: A regular nested class does not have a reference to the outer class instance. It behaves like a static nested class in Java
+class Outer {
+    private val outerProperty: String = "Outer Property"
+
+    // Regular nested class
+    class Nested {
+        fun nestedFunction() = "Hello from Nested Class"
+    }
+}
+
+// 2. An inner class has a reference to an instance of the outer class and can access its members. To define an inner class, use the inner keyword
+class Outer2 {
+    private val outerProperty: String = "Outer Property"
+
+    fun outerFun(): String {
+        return "Outer2.outerFun"
+    }
+
+    // Inner Class
+    inner class Inner {
+        fun innerFunction() = "Accessing: $outerProperty"
+        fun innerFun() = outerFun()
+    }
+}
+
+fun main() {
+    val nested = Outer.Nested()
+    println(nested.nestedFunction())
+
+
+    val inner = Outer2().Inner()
+    println(inner.innerFunction())
+    println(inner.innerFun())
+}
+```
+
+#### Companion Objects
+Companion object is a way to create a singleton for a class. It allows you to define members (functions or properties) that are tied to the class rather than to instances of the class. A companion object can access the private members of the class and is used similarly to static members in Java
+
+```kt
+class MyClass {
+    // A property in the companion object
+    companion object {
+        val myProperty: String = "Hello, Companion!"
+        // A function in the companion object
+        fun myFunction(): String {
+            return "This is a function in the companion object"
+        }
+    }
+}
+fun main() {
+    // Accessing the companion object's property
+    println(MyClass.myProperty)
+    // Accessing the companion object's function
+    println(MyClass.myFunction())
+}
+
+// Default name Companion
+class WithNamed {
+    companion object Named {
+        fun s() = "from Named"
+    }
+}
+
+class WithDefault {
+    companion object {
+        fun s() = "from Default"
+    }
+}
+
+fun main() {
+    WithNamed.s() eq "from Named"
+    WithNamed.Named.s() eq "from Named"
+    WithDefault.s() eq "from Default"
+    WithDefault.Companion.s() eq "from Default"
+}
+```
+
 #### Lambdas
 ```kt
 
