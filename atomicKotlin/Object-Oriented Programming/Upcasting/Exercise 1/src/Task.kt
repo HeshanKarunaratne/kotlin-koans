@@ -19,7 +19,8 @@ class KangarooRat: Rodent {
 }
 
 fun upcast(rodent: Rodent) {
-  TODO()
+  trace(rodent.eat())
+  trace(rodent.speak())
 }
 
 fun main() {

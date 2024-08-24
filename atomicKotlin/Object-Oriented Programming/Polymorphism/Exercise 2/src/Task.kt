@@ -26,5 +26,10 @@ class Frog : Animal() {
 fun main() {
   val animal: Animal = Frog()
   animal.jump()
-  trace eq TODO()
+  trace eq """
+    Frog: jump
+    Animal: jump
+    Frog: talk
+    Animal: talk
+  """.trimIndent()
 }

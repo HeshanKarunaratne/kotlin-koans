@@ -3,17 +3,17 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 95
-        length: 19
+      - offset: 96
+        length: 91
         placeholder_text: // TODO class Alien
         initial_state:
           length: 19
           offset: 95
         initialized_from_dependency: false
         encrypted_possible_answer: oY59ZACVmKvVGXlt6GMu5U6I71FpFTQBXluh+BoEx6xQ9YdhDtvVVEu9YDhNQ2RGbOvazmQbcwllIKjym1echrxoqvHRRuybF6XZrMzRJghFyfMADyg1kGM/Bl+PAfMi
-        selected: false
-        status: Unchecked
-      - offset: 129
+        selected: true
+        status: Solved
+      - offset: 202
         length: 74
         placeholder_text: |-
           /*
@@ -25,11 +25,14 @@ files:
           offset: 129
         initialized_from_dependency: false
         encrypted_possible_answer: FBSCeyGzcs5YeJT2XixzubedDyqKUhuKfoy/1xjwM2k/yHWRBfTtABN1EEP8VHVf0pGwrESAwtTb60Ph9tpmo+7HAkl7VHsLLt5tDnyEuSU=
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 23 Aug 2024 18:06:03 UTC"
 record: -1

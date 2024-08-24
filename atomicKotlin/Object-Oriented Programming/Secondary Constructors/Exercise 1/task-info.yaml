@@ -3,28 +3,28 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 136
-        length: 23
+      - offset: 137
+        length: 39
         placeholder_text: // TODO add constructor
         initial_state:
           length: 23
           offset: 136
         initialized_from_dependency: false
         encrypted_possible_answer: eIK4cFiWp59okqaz7yIFQhhuZHpBzxOsHOY2/HgVfps=
-        selected: false
-        status: Unchecked
-      - offset: 182
-        length: 16
+        selected: true
+        status: Solved
+      - offset: 199
+        length: 26
         placeholder_text: "val type: String"
         initial_state:
           length: 16
           offset: 182
         initialized_from_dependency: false
         encrypted_possible_answer: RqiZJroJnSLKsUUGy19/aXbQbHsdmjCp15YFp6KxMIA=
-        selected: false
-        status: Unchecked
-      - offset: 214
-        length: 63
+        selected: true
+        status: Solved
+      - offset: 241
+        length: 55
         placeholder_text: |-
           //    Flower1().type eq "Daisy"
           //    Flower2().type eq "Daisy"
@@ -34,10 +34,13 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: cme1eFovVjcKHFUYsGDOXvyr3Wact5CVsDcXDJKnlckRGwsWdvJ5Qd8itcgon4cUA5p0JXeO7aUdo3PZ7UOajA==
         selected: false
-        status: Unchecked
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 23 Aug 2024 18:37:34 UTC"
 record: -1

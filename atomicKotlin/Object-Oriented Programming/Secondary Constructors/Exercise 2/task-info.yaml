@@ -3,18 +3,18 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 138
-        length: 33
+      - offset: 139
+        length: 72
         placeholder_text: // TODO add secondary constructor
         initial_state:
           length: 33
           offset: 138
         initialized_from_dependency: false
         encrypted_possible_answer: 7tTYoZU5dbkgumbkX52GqmhSJ2ouTRmu9WMXTLU5satZcVfwbfy8AtQ5eGy2Wo09HOmZZnTLtT5nFOOKTIEjK32dkoCU+3uUZNoyD12PFdw=
-        selected: false
-        status: Unchecked
-      - offset: 266
-        length: 74
+        selected: true
+        status: Solved
+      - offset: 304
+        length: 64
         placeholder_text: |-
           //    SpaceShip("MClass", 29321) eq
           //      "SpaceShip(name=MClass-29321)"
@@ -23,11 +23,14 @@ files:
           offset: 266
         initialized_from_dependency: false
         encrypted_possible_answer: Bq4moQVi8B8C+e2AgZ/Rwv0VG8XAQ0RXAnN3QhhkXHqYTfCykzCiMPRQyZu39wPM4A+hroMFs01heExgcbLXCVIqKWBD1dNwBa5exHKXVes=
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 23 Aug 2024 18:42:31 UTC"
 record: -1

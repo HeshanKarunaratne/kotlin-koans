@@ -4,18 +4,21 @@ files:
     visible: true
     placeholders:
       - offset: 68
-        length: 7
+        length: 114
         placeholder_text: // TODO
         initial_state:
           length: 7
           offset: 68
         initialized_from_dependency: false
         encrypted_possible_answer: 9+Qt5M7cjRTKNPN7Pi2L1n6U6aqNvmjqTfQP9qvQgOWHy0pjWxpOoNyK/jVtvHLUFQs+gBGYrXsvR36pfLql5CUeI33JfilGtstdmG9555zbjcCfpgcbb+kozrBJ7ZF7lt8Vwv8nTiEIHlulmb2Im73z/8z52+hdrZSNcYeZtaA=
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 24 Aug 2024 07:53:09 UTC"
 record: -1
