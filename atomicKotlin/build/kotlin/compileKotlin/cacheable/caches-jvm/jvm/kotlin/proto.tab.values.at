@@ -1,6 +1,4 @@
-mbdaKtRunningFoldKt
-SayHelloKtSchoolDataKtScientistKtSetOperationsKtSetsKtSimilarOperationKt
-SortWithKtSpreadOperatorKtStoringLambdaKtStrTemplatesKtStringConcatenationKtStringIsNullOrKtStringIterationKtStringPlusNumberKtStringRangeKtStringTemplatesKt	StringsKtSumKtSumUsingRangeKtSumViaFoldKtTakeOrDropKtTerminalOperationsKtTestingExampleKtThreeQuotesKtToDoubleExceptionKtTopLevelPropertyKtTrace1KtTransformingMapKtTrimMarginKtTripleQuotesKtTrueOrFalseKtTruncationKtTwoArgLambdaKtTypesKtUnderscoreKtUnexpectedKtUnitReturnKtUnitReturnTypeKtUseALibraryKtUseBeanClassKt
+sformingMapKtTrimMarginKtTripleQuotesKtTrueOrFalseKtTruncationKtTwoArgLambdaKtTypesKtUnderscoreKtUnexpectedKtUnitReturnKtUnitReturnTypeKtUseALibraryKtUseBeanClassKt
 UseLinesKtUsingAtomicTestKtUsingLongsKtUsingTraceKtValsKtValueFromMapKtVarsKtVisibleArgsKtWhileControlKtWhileKtWhileLabeledKtWhileLoopKtWombatKtZeroArgumentsKtZipperKtZippingWithNextKt
 
 aaaAaaKt
@@ -861,7 +859,45 @@ K
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     variableArgumentListsExercise3TaskKt
+UnSealedKt" *     awingKtTrimmedMembersKt
+
+upcastingExercise1TaskKt
+
+upcastingExercise2TaskKt
+
+upcastingExercise3TaskKt
+
+useatomiclogUseAtomicLogKt
+ 
+usefullibraryUsefulLibraryKt
+!
+usingOperatorsExercise1TaskKt
+!
+usingOperatorsExercise2TaskKt
+!
+usingOperatorsExercise3TaskKt
+Y
+usingoperatorsComparableRangeKtCompareToKtDestructuringDataKtDestructuringDuoKt
+
+utilUtilKt
+
+varAndValExercise1TaskKt
+
+varAndValExercise2TaskKt
+
+varAndValExercise3TaskKt
+
+varAndValExercise4TaskKt
+
+varAndValExercise5TaskKt
+V
+varargsTwoFunctionsWithVarargsKtVarargLikeListKtVarargSumKtVariableArgListKt
+(
+variableArgumentListsExercise1TaskKt
+(
+variableArgumentListsExercise2TaskKt
+(
+variableArgumentListsExercise3TaskKt
 (
 variableArgumentListsExercise4TaskKt
 (
@@ -886,20 +922,7 @@ K
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     ArgumentsKt
-"
-withoutsealedclasses
-UnSealedKt" *     FibonacciPropertyKt
-
-propertydelegation2AddKt
-Z
-	recursionCallStackKtFactorialKtFibonacciKtInfiniteRecursionKtRecursionLimitsKt
-
-recursionExercise1TaskKt
-
-recursionExercise2TaskKt
-
-recursionExercise3TaskKt
+UnSealedKt" *     ecursionExercise3TaskKt
 
 recursionExercise4TaskKt
 &

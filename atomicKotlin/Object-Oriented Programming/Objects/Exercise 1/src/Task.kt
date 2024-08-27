@@ -6,17 +6,19 @@ private fun f() = trace("f() $p")
 private val p = "p"
 
 object Space {
-  /*TODO*/
+  fun f() = trace("Space.f() $p")
+  val p = "Space.p"
 }
 
 private object Space2 {
-  /*TODO*/
+  fun f() = trace("Space2.f() $p")
+  val p = "Space2.p"
 }
 
 fun main() {
   f()
-  /* Space.f()
-  Space2.f() */
+   Space.f()
+  Space2.f()
   trace eq """
     f() p
     Space.f() Space.p

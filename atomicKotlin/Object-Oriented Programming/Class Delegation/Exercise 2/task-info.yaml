@@ -4,38 +4,41 @@ files:
     visible: true
     placeholders:
       - offset: 566
-        length: 13
+        length: 7
         placeholder_text: /* private */
         initial_state:
           length: 13
           offset: 566
         initialized_from_dependency: false
         encrypted_possible_answer: +iBVIwl2rySML4zTDKVBOg==
-        selected: false
-        status: Unchecked
-      - offset: 613
-        length: 10
+        selected: true
+        status: Solved
+      - offset: 606
+        length: 29
         placeholder_text: /* TODO */
         initial_state:
           length: 10
           offset: 613
         initialized_from_dependency: false
         encrypted_possible_answer: I1tdVikgLF9j1J/BDJGwGDDwVtBr0oewBGn3oZ5yqwc=
-        selected: false
-        status: Unchecked
-      - offset: 903
-        length: 22
+        selected: true
+        status: Solved
+      - offset: 914
+        length: 12
         placeholder_text: honestlyDuck.crocodile
         initial_state:
           length: 22
           offset: 903
         initialized_from_dependency: false
         encrypted_possible_answer: y/QgsePJSyFFcZR1ylYEdQ==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 25 Aug 2024 16:22:52 UTC"
 record: -1

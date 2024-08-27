@@ -1,28 +1,64 @@
 // CompanionObjects/CompanionEx1.kt
 package companionObjectsExercise1
-import atomictest.*
+
+import atomictest.trace
 
 interface Vendor {
-  fun pencil()
-  fun pen()
+    fun pencil()
+    fun pen()
 }
 
 interface VendorFactory {
-  fun create(): Vendor
+    fun create(): Vendor
 }
 
-// TODO
+class Vendor1 private constructor() : Vendor {
+    override fun pencil() {
+        trace("Vendor1 pencil")
+    }
+
+    override fun pen() {
+        trace("Vendor1 pen")
+    }
+
+    companion object {
+        var factory = object : VendorFactory {
+            override fun create() = Vendor1()
+        }
+    }
+}
+
+class Vendor2 private constructor() : Vendor {
+    override fun pencil() {
+        trace("Vendor2 pencil")
+    }
+
+    override fun pen() {
+        trace("Vendor2 pen")
+    }
+
+    companion object {
+        var factory = object : VendorFactory {
+            override fun create() = Vendor2()
+        }
+    }
+}
+
+fun consumer(factory: VendorFactory) {
+    factory.create().pen()
+    factory.create().pencil()
+}
 
 fun main() {
-  /*
+
 // Implementations are interchangeable:
-  consumer(Vendor1.factory)
-  consumer(Vendor2.factory)
-  trace eq """
+    consumer(Vendor1.factory)
+    consumer(Vendor2.factory)
+    trace eq """
   Vendor1 pencil
   Vendor1 pen
   Vendor2 pencil
   Vendor2 pen
   """
-*/
+
 }

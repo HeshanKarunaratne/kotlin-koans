@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 114
-        length: 309
+        length: 282
         placeholder_text: |-
           sealed class Shape {
             fun draw() = "$name: Draw"
@@ -30,10 +30,10 @@ files:
           offset: 114
         initialized_from_dependency: false
         encrypted_possible_answer: 4gu6VRFiAm5L75Yf+QBq0Q/sNUVuQ+9MLt1BfbP5NNwWag4gXZNvfJcENbGe8nIpllGG4fsXaCDhTxbNLazR0P3A8pWQY3QoTPjKWujm7HzKV6DJM6NY5m17Dq9zte0DPFGc/3k4OkdQKcHUlptUUprm1555Ae1XFj80DvvjJ9Atxt68CJJY+8++eiO0th6Qhy5D5jsTIlUxI/5pnprVx4u3pfMkKW93h8ELsSpZNQbYk1Keswr0E8K2/gmq6xdvgnZDHCEeIj4CUEsP+F2zfQPs9IdnrhAsvJ08UKS86sSgvPPH9TGSIP8/YJmwqHvbsxTAa2UsjTdaHNPYKcVORryEQjhfx4Cz1kS9q9rAJlw=
-        selected: false
-        status: Unchecked
-      - offset: 601
-        length: 60
+        selected: true
+        status: Solved
+      - offset: 574
+        length: 56
         placeholder_text: |-
           /*  shapes.map { it.rotate() } eq
               "[, Square: Rotate]"*/
@@ -42,11 +42,14 @@ files:
           offset: 601
         initialized_from_dependency: false
         encrypted_possible_answer: 3hwoH1BPSdI0oAaAgG+rwR2ESFKzuxV2ukHOyMbQCIZG4bd5agtjLZHSGNdfSnxzogwXgVAd8eRldkdyJVNcyA==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 27 Aug 2024 18:11:56 UTC"
 record: -1

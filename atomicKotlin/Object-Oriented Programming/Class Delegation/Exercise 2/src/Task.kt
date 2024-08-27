@@ -33,8 +33,8 @@ fun interactWithCrocodile(crocodile: Crocodile) {
 }
 
 class CrocoDuck(
-  /* private */ val crocodile: Crocodile
-) : Duck/* TODO */ {
+  private val crocodile: Crocodile,
+  ) : Duck, Crocodile by crocodile {
   override fun quack() = crocodile.bite()
   override fun swim() = crocodile.bite()
 }
@@ -45,7 +45,7 @@ fun mimicDuck(crocodile: Crocodile): CrocoDuck =
 fun main() {
   val honestlyDuck = mimicDuck(RealCrocodile())
   interactWithDuck(honestlyDuck)
-  interactWithCrocodile(honestlyDuck.crocodile)
+  interactWithCrocodile(honestlyDuck)
   trace eq """
     Mnom-mnom
     Mnom-mnom

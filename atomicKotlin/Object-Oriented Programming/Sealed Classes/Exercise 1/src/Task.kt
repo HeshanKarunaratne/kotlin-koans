@@ -3,22 +3,26 @@ package sealedClassesExercise1
 import atomictest.*
 
 sealed class Transport {
-  // val capacity
+   abstract val capacity:Int
 }
 
 data class Train(
   val line: String,
-  val capacity: Int
+  override val capacity: Int
 ) : Transport()
 
 data class Bus(
   val number: String,
-  val capacity: Int
+  override val capacity: Int
 ) : Transport()
 
-// class Tram
+class Tram(
+  val route: String, override val capacity: Int
+) : Transport()
 
-// class Plane
+class Plane(
+  val flightNumber: String, override val capacity: Int
+) : Transport()
 
 fun travel(transport: Transport) {
   when (transport) {
@@ -26,16 +30,21 @@ fun travel(transport: Transport) {
       trace("Train ${transport.line}")
     is Bus ->
       trace("Bus ${transport.number}")
-    // TODO
+    is Tram ->
+      trace("Tram ${transport.route}")
+    is Plane ->
+      trace("Plane ${transport.flightNumber}")
   }
-  // TODO
+  trace("size ${transport.capacity}")
 }
 
 fun main() {
   listOf(
     Train("S1", 200),
     Bus("11", 45),
-    // TODO
+    Tram("22A Express", 60),
+    Plane("1103", 190),
+
   ).forEach(::travel)
   trace eq """
     Train S1

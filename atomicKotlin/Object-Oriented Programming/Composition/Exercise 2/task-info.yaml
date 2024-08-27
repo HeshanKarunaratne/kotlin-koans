@@ -3,8 +3,8 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 74
-        length: 91
+      - offset: 76
+        length: 143
         placeholder_text: |-
           class Stack<E> : ArrayList<E>() {
             fun push(e: E) = add(e)
@@ -15,10 +15,10 @@ files:
           offset: 74
         initialized_from_dependency: false
         encrypted_possible_answer: 0J+Gu16VtHNt6rMakPlrzyAVgR06zfP2GSaemDG9Ql5qDvtH5TlzWmBRAbfnkDFro24B9GPMYzT9qnTYFIQa3hIxsNM2a5XGo3Toh/+2xW0RLZowdRFocxs+HhlRwiQ/o9+QjDxprQzTBmxGDYetQ7rc3DQO5IvpNNlABPl6ODI=
-        selected: false
-        status: Unchecked
-      - offset: 167
-        length: 91
+        selected: true
+        status: Solved
+      - offset: 221
+        length: 144
         placeholder_text: |-
           class Queue<E>: ArrayList<E>() {
             fun put(e: E) = add(e)
@@ -29,11 +29,14 @@ files:
           offset: 167
         initialized_from_dependency: false
         encrypted_possible_answer: 1WERjZSj/UIhBP7Qj+/8sFwMN/Bez/0oJJn4b3hMvWiQD/fusG5GmvPULn8Ku/Gy7U1jLdkavwp2yYWNETeDs2mEVSBOtU+zkzEYDQbB06HkjwXHSH+d1sMYS2GZ1FiRIUWLPw7l703H55AyAeefM5KxNb/MBRjVc5PcjO10Za8=
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 25 Aug 2024 10:35:58 UTC"
 record: -1
