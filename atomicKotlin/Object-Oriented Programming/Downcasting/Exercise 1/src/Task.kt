@@ -7,17 +7,21 @@ interface Base {
 }
 
 class Derived1 : Base {
-  override fun f() { TODO() }
-  fun g() { TODO() }
+  override fun f() { trace("Derived1.f()") }
+  fun g() { trace("Derived1.g()") }
 }
 
 class Derived2 : Base {
-  override fun f() { TODO() }
-  fun h() { TODO() }
+  override fun f() { trace("Derived2.f()") }
+  fun h() { trace("Derived2.h()") }
 }
 
 fun checkAndCall(b: Base) {
-  TODO()
+  b.f()
+  when (b) {
+    is Derived1 -> b.g()
+    is Derived2 -> b.h()
+  }
 }
 
 fun main() {

@@ -3,8 +3,8 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 111
-        length: 113
+      - offset: 112
+        length: 201
         placeholder_text: |-
           sealed class Top
           class Middle1 : Top()
@@ -16,21 +16,24 @@ files:
           offset: 111
         initialized_from_dependency: false
         encrypted_possible_answer: GwshfP82uLAQLEzEKJoJhBQH5FzkrB9k7zV+p2rnN4g3Iq406UHz7537Q/z/aJrKfO3ealKso46qJYWy3U5DKTUzFUsgjpTlvIBw9Oh7MUWvCHmQHAVoIzyWeZ4KC3MdBDGPvGJrRoSzHaaVUj5Fl2XBslmZJuuUl2NMrAOpRJA=
-        selected: false
-        status: Unchecked
-      - offset: 335
-        length: 33
+        selected: true
+        status: Solved
+      - offset: 443
+        length: 4
         placeholder_text: // TODO display random subclasses
         initial_state:
           length: 33
           offset: 335
         initialized_from_dependency: false
         encrypted_possible_answer: gvp9W3bNICxeUONW4yp3+ME3TyPJipFSgLM05/UH1A/7sDqq4wBwM+57eAwj05E4n4ct/9wYelQXE3PLdvSNzaWVPdfIB+9H+mzkwtDxm3HxXacABEn/8h2vNvBXrzIz
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 28 Aug 2024 16:48:04 UTC"
 record: -1

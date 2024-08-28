@@ -1,4 +1,4 @@
-sformingMapKtTrimMarginKtTripleQuotesKtTrueOrFalseKtTruncationKtTwoArgLambdaKtTypesKtUnderscoreKtUnexpectedKtUnitReturnKtUnitReturnTypeKtUseALibraryKtUseBeanClassKt
+StringRangeKtStringTemplatesKt	StringsKtSumKtSumUsingRangeKtSumViaFoldKtTakeOrDropKtTerminalOperationsKtTestingExampleKtThreeQuotesKtToDoubleExceptionKtTopLevelPropertyKtTrace1KtTransformingMapKtTrimMarginKtTripleQuotesKtTrueOrFalseKtTruncationKtTwoArgLambdaKtTypesKtUnderscoreKtUnexpectedKtUnitReturnKtUnitReturnTypeKtUseALibraryKtUseBeanClassKt
 UseLinesKtUsingAtomicTestKtUsingLongsKtUsingTraceKtValsKtValueFromMapKtVarsKtVisibleArgsKtWhileControlKtWhileKtWhileLabeledKtWhileLoopKtWombatKtZeroArgumentsKtZipperKtZippingWithNextKt
 
 aaaAaaKt
@@ -179,6 +179,10 @@ CreatureKt
 FindTypeKtNarrowingUpcastKtSafeKtUnsafeKt
 
 downcastingExercise1TaskKt
+
+downcastingExercise2TaskKt
+
+downcastingExercise3TaskKt
 ;
 enumerationsDirectionKtLevelKtRecursiveEnumImportKt
 
@@ -859,17 +863,7 @@ K
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     awingKtTrimmedMembersKt
-
-upcastingExercise1TaskKt
-
-upcastingExercise2TaskKt
-
-upcastingExercise3TaskKt
-
-useatomiclogUseAtomicLogKt
- 
-usefullibraryUsefulLibraryKt
+UnSealedKt" *     UnSealedKt" *     yKt
 !
 usingOperatorsExercise1TaskKt
 !
@@ -922,13 +916,7 @@ K
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     ecursionExercise3TaskKt
-
-recursionExercise4TaskKt
-&
-repetitionWithWhileExercise1TaskKt
-&
-repetitionWithWhileExercise2TaskKt
+UnSealedKt" *     hWhileExercise2TaskKt
 &
 repetitionWithWhileExercise3TaskKt
 &

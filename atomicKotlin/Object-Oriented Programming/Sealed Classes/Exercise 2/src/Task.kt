@@ -1,14 +1,15 @@
 // SealedClasses/SealedEx2.kt
 package sealedClassesExercise2
-import sealedClassesExercise1.*
-import atomictest.*
+
+import atomictest.trace
+import sealedClassesExercise1.Transport
 
 fun main() {
-  TODO()
-   trace eq """
-    Train
-    Bus
-    Tram
-    Plane
+    Transport::class.sealedSubclasses.map { it.simpleName }.forEach { trace(it) }
+    trace eq """
+Bus
+Plane
+Train
+Tram
   """
 }
