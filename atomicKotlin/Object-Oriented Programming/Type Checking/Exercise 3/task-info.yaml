@@ -3,58 +3,58 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 114
-        length: 9
+      - offset: 115
+        length: 12
         placeholder_text: interface
         initial_state:
           length: 9
           offset: 114
         initialized_from_dependency: false
         encrypted_possible_answer: uflqW7j9sTW6AX27UVaN9A==
-        selected: false
-        status: Unchecked
-      - offset: 135
-        length: 3
+        selected: true
+        status: Solved
+      - offset: 139
+        length: 5
         placeholder_text: fun
         initial_state:
           length: 3
           offset: 135
         initialized_from_dependency: false
         encrypted_possible_answer: ztbGeTgPYvJZ7jDObEl0Hg==
-        selected: false
-        status: Unchecked
-      - offset: 164
-        length: 3
+        selected: true
+        status: Solved
+      - offset: 170
+        length: 10
         placeholder_text: fun
         initial_state:
           length: 3
           offset: 164
         initialized_from_dependency: false
         encrypted_possible_answer: ztbGeTgPYvJZ7jDObEl0Hg==
-        selected: false
-        status: Unchecked
-      - offset: 209
-        length: 6
+        selected: true
+        status: Solved
+      - offset: 222
+        length: 8
         placeholder_text: Insect
         initial_state:
           length: 6
           offset: 209
         initialized_from_dependency: false
         encrypted_possible_answer: SevqUjl6wd7zal3X0IlVIw==
-        selected: false
-        status: Unchecked
-      - offset: 230
-        length: 6
+        selected: true
+        status: Solved
+      - offset: 245
+        length: 8
         placeholder_text: Insect
         initial_state:
           length: 6
           offset: 230
         initialized_from_dependency: false
         encrypted_possible_answer: SevqUjl6wd7zal3X0IlVIw==
-        selected: false
-        status: Unchecked
-      - offset: 376
-        length: 46
+        selected: true
+        status: Solved
+      - offset: 458
+        length: 2
         placeholder_text: |-
           if (this is Flea)
               crawl()
@@ -65,61 +65,64 @@ files:
           offset: 376
         initialized_from_dependency: false
         encrypted_possible_answer: xJpd1TYUDtaTr+D+ADavcIuezfZsLh+CowR0Z26x0kns5IVblxgIal+1kVfxIGJcqvFf3yI4yONhekecYKcH6A==
-        selected: false
-        status: Unchecked
-      - offset: 434
-        length: 22
+        selected: true
+        status: Solved
+      - offset: 472
+        length: 14
         placeholder_text: "SwimmingInsect: Insect"
         initial_state:
           length: 22
           offset: 434
         initialized_from_dependency: false
         encrypted_possible_answer: gv5usMiAAcOcDETkJVSrHQ==
-        selected: false
-        status: Unchecked
-      - offset: 501
-        length: 19
+        selected: true
+        status: Solved
+      - offset: 533
+        length: 11
         placeholder_text: "WaterWalker: Insect"
         initial_state:
           length: 19
           offset: 501
         initialized_from_dependency: false
         encrypted_possible_answer: WAl/hD7S4hNC0xiIBL/56g==
-        selected: false
-        status: Unchecked
-      - offset: 593
-        length: 14
+        selected: true
+        status: Solved
+      - offset: 615
+        length: 24
         placeholder_text: SwimmingInsect
         initial_state:
           length: 14
           offset: 593
         initialized_from_dependency: false
         encrypted_possible_answer: wefjQ+hwRgCsXryM3578IlLloMsZxk8pGQlzK3HlST8=
-        selected: false
-        status: Unchecked
-      - offset: 629
-        length: 11
+        selected: true
+        status: Solved
+      - offset: 661
+        length: 21
         placeholder_text: WaterWalker
         initial_state:
           length: 11
           offset: 629
         initialized_from_dependency: false
         encrypted_possible_answer: YbJoOhwzbElxXUShSockgvWdMprNr++Qx26wQgQ9Zx4=
-        selected: false
-        status: Unchecked
-      - offset: 665
-        length: 27
+        selected: true
+        status: Solved
+      - offset: 707
+        length: 37
         placeholder_text: "SwimmingInsect, WaterWalker"
         initial_state:
           length: 27
           offset: 665
         initialized_from_dependency: false
         encrypted_possible_answer: +vnqRQyDHnikQw8Kw53V1ojTDz3dKOOKedeWkXs7opmKs0qYzTS731lsfdzE84cP
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 28 Aug 2024 18:02:39 UTC"
 record: -1

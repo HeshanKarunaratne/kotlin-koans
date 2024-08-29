@@ -1,63 +1,50 @@
 // TypeChecking/TypeCheckingSoln3.kt
 package typeCheckingExercise3
+
 import atomictest.eq
 import typechecking.name
 
-interface Insect {
-  fun walk() = "$name: walk"
-  fun fly() = "$name: fly"
+sealed class Insect {
+    fun walk() = "$name: walk"
+    open fun fly() = "$name: fly"
 }
 
-class HouseFly : Insect
+class HouseFly : Insect()
 
-class Flea : Insect {
-  override fun fly() =
-    throw Exception("Flea cannot fly")
-  fun crawl() = "Flea: crawl"
+class Flea : Insect() {
+    override fun fly() = throw Exception("Flea cannot fly")
+
+    fun crawl() = "Flea: crawl"
 }
 
-fun Insect.basic() =
-  walk() + " " +
-    if (this is Flea)
-    crawl()
-  else
-    fly()
-
-interface SwimmingInsect: Insect {
-  fun swim() = "$name: swim"
+fun Insect.basic() = when (this) {
+    is Flea -> walk() + " " + crawl()
+    else -> walk() + " " + fly()
 }
 
-interface WaterWalker: Insect {
-  fun walkWater() =
-    "$name: walk on water"
+
+interface SwimmingInsect {
+    fun swim() = "$name: swim"
 }
 
-class WaterBeetle : SwimmingInsect
-class WaterStrider : WaterWalker
-class WhirligigBeetle : SwimmingInsect, WaterWalker
+interface WaterWalker {
+    fun walkWater() = "$name: walk on water"
+}
 
-fun Insect.water() =
-  when(this) {
+class WaterBeetle : SwimmingInsect, Insect()
+class WaterStrider : WaterWalker, Insect()
+class WhirligigBeetle : SwimmingInsect, WaterWalker, Insect()
+
+fun Insect.water() = when (this) {
     is SwimmingInsect -> swim()
     is WaterWalker -> walkWater()
     else -> "$name: drown"
-  }
+}
 
 fun main() {
-  val insects = listOf(
-    HouseFly(), Flea(), WaterStrider(),
-    WaterBeetle(), WhirligigBeetle()
-  )
-  insects.map { it.basic() } eq
-    "[HouseFly: walk HouseFly: fly, " +
-    "Flea: walk Flea: crawl, " +
-    "WaterStrider: walk WaterStrider: fly, " +
-    "WaterBeetle: walk WaterBeetle: fly, " +
-    "WhirligigBeetle: walk " +
-    "WhirligigBeetle: fly]"
-  insects.map { it.water() } eq
-    "[HouseFly: drown, Flea: drown, " +
-    "WaterStrider: walk on water, " +
-    "WaterBeetle: swim, " +
-    "WhirligigBeetle: swim]"
+    val insects = listOf(
+        HouseFly(), Flea(), WaterStrider(), WaterBeetle(), WhirligigBeetle()
+    )
+    insects.map { it.basic() } eq "[HouseFly: walk HouseFly: fly, " + "Flea: walk Flea: crawl, " + "WaterStrider: walk WaterStrider: fly, " + "WaterBeetle: walk WaterBeetle: fly, " + "WhirligigBeetle: walk " + "WhirligigBeetle: fly]"
+    insects.map { it.water() } eq "[HouseFly: drown, Flea: drown, " + "WaterStrider: walk on water, " + "WaterBeetle: swim, " + "WhirligigBeetle: swim]"
 }
