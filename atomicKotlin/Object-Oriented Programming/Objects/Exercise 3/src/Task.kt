@@ -1,39 +1,50 @@
 // Objects/ObjectEx3.kt
 package objectsExercise3
-import atomictest.*
+
+import atomictest.eq
 
 interface AdventureGame {
-  interface Environment
-  interface Character
-  val environment: Environment
-  val characters: MutableList<Character>
-  fun populate()
+    interface Environment
+    interface Character
+
+    val environment: Environment
+    val characters: MutableList<Character>
+    fun populate()
 }
 
 class Jungle : AdventureGame.Environment {
-/*TODO*/
+    object Factory {
+        fun create() = Jungle()
+    }
 }
 
 class Monkey : AdventureGame.Character {
-/*TODO*/
+    object Factory {
+        fun create() = Monkey()
+    }
+    override fun toString() = "Monkey"
 }
 
 class Snake : AdventureGame.Character {
-/*TODO*/
+    object Factory {
+        fun create() = Snake()
+    }
+    override fun toString() = "Snake"
 }
 
 object MonkeysVsSnakes : AdventureGame {
-  override val environment =
-    TODO("Not yet implemented")
-  override val characters =
-    mutableListOf<AdventureGame.Character>()
-  override fun populate() {
-    TODO("Not yet implemented")
-  }
+    override val environment =
+        Jungle.Factory.create()
+    override val characters =
+        mutableListOf<AdventureGame.Character>()
+    override fun populate() {
+        characters.add(Monkey.Factory.create())
+        characters.add(Snake.Factory.create())
+    }
 }
 
+
 fun main() {
-  MonkeysVsSnakes.populate()
-  MonkeysVsSnakes.characters eq
-    "[Monkey, Snake]"
+    MonkeysVsSnakes.populate()
+    MonkeysVsSnakes.characters eq "[Monkey, Snake]"
 }

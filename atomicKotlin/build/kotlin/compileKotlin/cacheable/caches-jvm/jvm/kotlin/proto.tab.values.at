@@ -1,11 +1,4 @@
-
-MainArgsKt	MappingKtMapsKtMatchingAgainstValsKtMembershipInRangeKtMembershipKtMembershipUsingBoundsKt	ModulusKtMultipleArgsKtMultipleListReferencesKtMultipleListRefsKtMultipleRefKtMultiplyByFourKtMultiplyByThreeKtMultiplyByTwoKtMutableListKtMutableMapsKtMutableSetKtNPEOnPlatformTypeKt
-NewAngleKtNoComputationYetKtNonNullAssertCallKtNonNullAssertKtNullInMapsKtNullableFunctionKtNullableInMapKtNullableReturnKtNullableTypesKtNumberConversionsKtNumberSequence2KtNumberTypesKtObserveAnimalsKtOmittingParenthesesKtOneOrTheOtherKt	OpOrderKtOpOrderParensKtOpen1KtOpen2KtOperatorPlusKtOutOfBoundsKt
-OverflowKtPairDestructuringKtParameterizedTypesKtPartitionKtPostfixVsPrefixKtPredicatesKtRandomKtRangeOfIntKt
-RangeSumKtReadOnlyAndPlusKtReadOnlyCollectionsKtReadOnlyMapsKtReadonlyVsMutableListKtRecordAnimalsKtReduceAndReduceRightKtReferencesKtRemoveDuplicatesKtRepeatByIntKt
-RepeatHiKtRepeatThreeTimesKtReturnFromFunKtReturnInsideLambdaKtRunningFoldKt
-SayHelloKtSchoolDataKtScientistKtSetOperationsKtSetsKtSimilarOperationKt
-SortWithKtSpreadOperatorKtStoringLambdaKtStrTemplatesKtStringConcatenationKtStringIsNullOrKtStringIterationKtStringPlusNumberKtStringRangeKtStringTemplatesKt	StringsKtSumKtSumUsingRangeKtSumViaFoldKtTakeOrDropKtTerminalOperationsKtTestingExampleKtThreeQuotesKtToDoubleExceptionKtTopLevelPropertyKtTrace1KtTransformingMapKtTrimMarginKtTripleQuotesKtTrueOrFalseKtTruncationKtTwoArgLambdaKtTypesKtUnderscoreKtUnexpectedKtUnitReturnKtUnitReturnTypeKtUseALibraryKtUseBeanClassKt
+tTestingExampleKtThreeQuotesKtToDoubleExceptionKtTopLevelPropertyKtTrace1KtTransformingMapKtTrimMarginKtTripleQuotesKtTrueOrFalseKtTruncationKtTwoArgLambdaKtTypesKtUnderscoreKtUnexpectedKtUnitReturnKtUnitReturnTypeKtUseALibraryKtUseBeanClassKt
 UseLinesKtUsingAtomicTestKtUsingLongsKtUsingTraceKtValsKtValueFromMapKtVarsKtVisibleArgsKtWhileControlKtWhileKtWhileLabeledKtWhileLoopKtWombatKtZeroArgumentsKtZipperKtZippingWithNextKt
 
 aaaAaaKt
@@ -874,20 +867,83 @@ K
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     4
-	sequencesDefineTakeIfKtEagerVsLazyEvaluationKt
+UnSealedKt" *     Kt	BmiWhenKtGermanOrdinalsKtMixColorsKt
+.
+withdefaultargumentsWithDefaultArgumentsKt
+#
+withnullAverageIncomeWithNullKt
+4
+withoutdefaultargumentsWithoutDefaultArgumentsKt
+"
+withoutsealedclasses
+UnSealedKt" *     ner2Kt
+3
+typechecking3BeverageContainer3KtTypeCheck3Kt
+(
+	upcasting	DrawingKtTrimmedMembersKt
 
-sequencesExercise1TaskKt
+upcastingExercise1TaskKt
 
-sequencesExercise2TaskKt
+upcastingExercise2TaskKt
 
-sequencesExercise3TaskKt
+upcastingExercise3TaskKt
+
+useatomiclogUseAtomicLogKt
+ 
+usefullibraryUsefulLibraryKt
+!
+usingOperatorsExercise1TaskKt
+!
+usingOperatorsExercise2TaskKt
+!
+usingOperatorsExercise3TaskKt
+Y
+usingoperatorsComparableRangeKtCompareToKtDestructuringDataKtDestructuringDuoKt
+
+utilUtilKt
 
-sequencesExercise4TaskKt
+varAndValExercise1TaskKt
 
-sequencesExercise5TaskKt
+varAndValExercise2TaskKt
 
-sequencesExercise6TaskKt
+varAndValExercise3TaskKt
+
+varAndValExercise4TaskKt
+
+varAndValExercise5TaskKt
+V
+varargsTwoFunctionsWithVarargsKtVarargLikeListKtVarargSumKtVariableArgListKt
+(
+variableArgumentListsExercise1TaskKt
+(
+variableArgumentListsExercise2TaskKt
+(
+variableArgumentListsExercise3TaskKt
+(
+variableArgumentListsExercise4TaskKt
+(
+variableArgumentListsExercise5TaskKt
+S
+varianceBoxAssignmentKtCovariantListKtInBoxAssignmentKtOutBoxAssignmentKt
+"
+whenExpressionsExercise1TaskKt
+"
+whenExpressionsExercise2TaskKt
+"
+whenExpressionsExercise3TaskKt
+"
+whenExpressionsExercise4TaskKt
+K
+whenexpressionsAnalyzeInputKt	BmiWhenKtGermanOrdinalsKtMixColorsKt
+.
+withdefaultargumentsWithDefaultArgumentsKt
+#
+withnullAverageIncomeWithNullKt
+4
+withoutdefaultargumentsWithoutDefaultArgumentsKt
+"
+withoutsealedclasses
+UnSealedKt" *     TaskKt
 
 sequencesExercise7TaskKt
 

@@ -3,19 +3,22 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 535
-        length: 6
+      - offset: 607
+        length: 58
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 535
         initialized_from_dependency: false
         encrypted_possible_answer: 8+X6LKdoCCwU09cgMZMyk4P5ocOMAXwJzZ32DmFrfaXTwG3dSBE2/5zr9YebwijqNGndNkUqcRacHdZAxE6kwg==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 30 Aug 2024 16:43:34 UTC"
 record: -1
