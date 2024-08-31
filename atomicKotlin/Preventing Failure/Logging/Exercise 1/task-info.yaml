@@ -37,7 +37,7 @@ files:
           offset: 613
         initialized_from_dependency: false
         encrypted_possible_answer: ar0tt1TrmxaSrNToto4zmkaoixHwG2bcjOyNA86n8uIRVuoQXKTHgYtDUnRGf6huHFo/TU/nJhxkRDxRfz373fKmAtgJ1dyLTNOPFtfgOp9ghJT2g78x1uAV4wJLQOHemlqhsF43SyG3u3ugdQysURNJR+PCpvgRySi0+shVJUwA/4kMDnW2FGNOULIV7HHtcJb9hiRDRuTuTW3iQHgzh9+JA63HmM3IDznV9msI+/4CgCmyfRkfmW9+woJCn+OylNkhXDE1bjmtxtak+wQTpVCFzHuMVUTV+nGdWTV2ea19LI0Nqi7OujbmLKy3DiDH
-        selected: false
+        selected: true
         status: Unchecked
     learner_created: false
   - name: test/Tests.kt

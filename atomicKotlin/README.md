@@ -871,6 +871,78 @@ fun main() {
 }
 ```
 
+#### Exceptions
+```kt
+// Define Exceptions
+class Exception1(val value: Int) : Exception("wrong value: $value")
+capture {
+    throw Exception1(13)
+} eq "Exception1: wrong value: 13"
+```
+
+#### Check Instructions
+```kt
+// require
+data class Month(val monthNumber: Int) {
+  init {
+    require(monthNumber in 1..12) {
+      "Month out of range: $monthNumber"
+    }
+  }
+}
+
+Month(1) eq "Month(monthNumber=1)" 
+capture { Month(13) } eq "IllegalArgumentException: Month out of range:13"
+
+// requireNotNull
+fun notNull(n: Int?): Int {
+    requireNotNull(n) {             // [1]
+        "notNull() argument cannot be null"
+    }
+    return n * 9                    // [2]
+}
+
+val n: Int? = null
+capture { notNull(n) } eq "IllegalArgumentException: notNull() argument cannot be null"
+
+// Nothing Type
+fun later(s: String): String = TODO("later()")
+capture { later("Hello") } eq "NotImplementedError: An operation is not implemented: later()"
+
+// Lists of Nothing
+val listNone: List<Nothing?> = listOf(null)
+val ints: List<Int?> = listOf(null)
+ints eq listNone
+
+// Resource Cleanup
+class Usable() : AutoCloseable {
+    fun func() = trace("func()")
+    override fun close() = trace("close()")
+}
+
+fun main() {
+    Usable().use { it.func() }
+    trace eq "func() close()"
+}
+```
+
+#### Unit Tests
+```kt
+fun testFortyTwo2(n: Int = 42) {
+  expect(n, "Incorrect,") { fortyTwo() }
+}
+
+testFortyTwo2()
+capture { testFortyTwo2(43) } contains listOf("expected:", "<43> but was:", "<42>")
+
+class SampleTest {
+    @Test
+    fun testFortyTwo() {
+        expect(42, "Incorrect,") { fortyTwo() }
+    }
+}
+```
+
 #### Lambdas
 ```kt
 

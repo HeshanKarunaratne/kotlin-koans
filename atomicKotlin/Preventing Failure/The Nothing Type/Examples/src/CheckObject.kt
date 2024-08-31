@@ -5,10 +5,8 @@ import atomictest.*
 class BadData(m: String) : Exception(m)
 
 fun checkObject(obj: Any?): String =
-  if (obj is String)
-    obj
-  else
-    throw BadData("Needs String, got $obj")
+  if (obj is String) obj
+  else throw BadData("Needs String, got $obj")
 
 fun test(checkObj: (obj: Any?) -> String) {
   checkObj("abc") eq "abc"

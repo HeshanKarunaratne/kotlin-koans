@@ -1,23 +1,25 @@
 // ExceptionHandling/CaptureImplementation.kt
 package exceptionhandling
+
 import atomictest.CapturedException
 
-fun capture(f:() -> Unit): CapturedException =
-  try {                                 // [1]
+fun capture(f: () -> Unit): CapturedException = try {
     f()
-    CapturedException(null,
-      "<Error>: Expected an exception") // [2]
-  } catch (e: Throwable) {              // [3]
-    CapturedException(e::class,         // [4]
-      if (e.message != null) ": ${e.message}"
-      else "")
-  }
+    CapturedException(
+        null, "<Error>: Expected an exception"
+    )
+} catch (e: Throwable) {
+    CapturedException(
+        e::class, if (e.message != null) ": ${e.message}"
+        else ""
+    )
+}
 
 fun main() {
-  capture {
-    throw Exception("!!!")
-  } eq "Exception: !!!"                 // [5]
-  capture {
-    1
-  } eq "<Error>: Expected an exception"
+    capture {
+        throw Exception("!!!")
+    } eq "Exception: !!!"
+    capture {
+        1
+    } eq "<Error>: Expected an exception"
 }

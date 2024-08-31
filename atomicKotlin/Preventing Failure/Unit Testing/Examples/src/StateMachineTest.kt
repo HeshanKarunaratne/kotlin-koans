@@ -19,5 +19,4 @@ class StateMachineTest {
     sm.pause()
     assertEquals(State.Paused, sm.state)
   }
-  // ...
 }
