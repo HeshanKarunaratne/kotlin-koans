@@ -1,25 +1,27 @@
 // NothingType/NothingTypeSoln2.kt
 package theNothingTypeExercise2
 import atomictest.*
+import org.junit.internal.runners.statements.Fail
 
 object Log {
-  // TODO
-  fun add(msg: String) = "TODO"
-  fun report(): List<String> = TODO()
+  val messages:MutableList<String> = mutableListOf()
+  fun add(msg: String) = messages.add(msg)
+  fun report(): List<String> = messages.toList()
 }
 
-class Failure
+class Failure(msg: String) : Exception(msg)
 
 fun fail(msg: String): Nothing {
-  TODO()
+  Log.add(msg)
+  throw Failure(msg)
 }
 
 fun require(test: Boolean) {
-  TODO()
+  if (!test) fail("require failed")
 }
 
 fun check(test: Boolean) {
-  TODO()
+  if (!test) fail("check failed")
 }
 
 fun main() {

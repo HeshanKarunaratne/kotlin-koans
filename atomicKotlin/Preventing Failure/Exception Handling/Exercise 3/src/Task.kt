@@ -53,10 +53,42 @@ fun transact(level: Int): Status {
     trace("Database Problem $e")
     return Failed
   }
+
   fun transfer(net: NetConnection): Status {
-    TODO()
+    try {
+      net.open(2, level)
+      db.write(net.read(), 3, level)
+    } catch (e: NetworkFail) {
+      trace("Network Problem $e")
+      return Failed
+    } catch (e: DBWriteFail) {
+      trace("Database Write Failed $e")
+      return Failed
+    } finally {
+      try {
+        net.close(4, level)
+      } catch (e: NetworkCloseFail) {
+        trace("Network Close Failed $e")
+        return Failed
+      }
+    }
+    return Success
   }
-  TODO()
+
+  try {
+    nets.forEach {
+      if (transfer(it) == Failed)
+        return Failed
+    }
+  } finally {
+    try {
+      db.close(5, level)
+    } catch (e: DBCloseFail) {
+      trace("Database Problem $e")
+      throw e
+    }
+  }
+  return Success
 }
 
 fun main() {

@@ -3,11 +3,24 @@ package checkInstructionsExercise2
 import atomictest.*
 
 fun fn(s: String?): String {
-  TODO()
+  requireNotNull(s)
+  require(s.isNotEmpty()) {
+    "s must not be empty, is [$s]"
+  }
+  require(s.isNotBlank()) {
+    "s must not be blank, is [$s]"
+  }
+  val parts = s.split("-")
+  require(parts.size == 3 && parts.all { it.isNotEmpty() }) {
+    "s must contain 3 parts separated by '-', is [$s]"
+  }
+  return s
 }
 
 fun gn(d: Double?): Double {
-  TODO()
+  requireNotNull(d)
+  require(d > 0 && d <= 10)
+  return d
 }
 
 fun main() {

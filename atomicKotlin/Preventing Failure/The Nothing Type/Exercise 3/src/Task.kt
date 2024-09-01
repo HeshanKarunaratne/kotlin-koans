@@ -2,15 +2,17 @@
 package theNothingTypeExercise3
 import atomictest.*
 
-private var _debug: Boolean = TODO()
+private var _debug: Boolean = true
 
-class Failure
+class Failure(msg: String) : Exception(msg)
 
-fun fail(msg: String): Nothing =
-  TODO()
+fun fail(msg: String): Nothing {
+  throw Failure(msg)
+}
 
 fun debug(test: Boolean) {
-  TODO()
+  trace("debug($test) with _debug[$_debug]")
+  if (_debug && !test) fail("debug() failed")
 }
 
 fun main() {

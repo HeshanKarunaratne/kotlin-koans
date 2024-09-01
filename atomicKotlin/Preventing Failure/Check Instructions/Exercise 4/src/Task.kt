@@ -2,7 +2,9 @@
 package checkInstructionsExercise4
 import atomictest.*
 
-class Tank
+class Tank(val capacity: Double){
+
+}
 
 fun main() {
 /*

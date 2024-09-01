@@ -2,18 +2,19 @@
 package theNothingTypeExercise1
 import atomictest.*
 
-class Failure
+class Failure(msg: String): Exception(msg)
 
 fun fail(msg: String): Nothing {
-  TODO()
+  trace(msg)
+  throw Failure(msg)
 }
 
 fun require(test: Boolean) {
-  TODO()
+  if (!test) fail("require() failed")
 }
 
 fun check(test: Boolean) {
-  TODO()
+  if (!test) fail("check() failed")
 }
 
 fun main() {
