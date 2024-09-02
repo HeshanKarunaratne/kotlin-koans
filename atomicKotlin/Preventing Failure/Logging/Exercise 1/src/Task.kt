@@ -32,10 +32,22 @@ class Level(
   }
 }
 
-class Pipe
+class Pipe(val level: Level = Level(0..10)){
+   val logger = Logger("PipeLog.txt")
+
+  fun checkLevel(){
+    when (level.value){
+      2 -> logger.trace("Level 2")
+      4 -> logger.debug("Level 4")
+      6 -> logger.info("Level 6")
+      8 -> logger.warn("Level 8")
+      10 -> logger.error("Level 10")
+    }
+  }
+}
 
 fun main() {
-/*
+
   val pipe = Pipe()
   (0..10).forEach {
     pipe.level.up()
@@ -50,5 +62,5 @@ fun main() {
   Error: Level 10
   Error: Level 10
   """
-*/
+
 }

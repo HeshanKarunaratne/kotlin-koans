@@ -4,17 +4,17 @@ files:
     visible: true
     placeholders:
       - offset: 1272
-        length: 30
+        length: 18
         placeholder_text: println("Database Problem $e")
         initial_state:
           length: 30
           offset: 1272
         initialized_from_dependency: false
         encrypted_possible_answer: BPrP/APd52Muua1Znakw8jwux3+mGGw9Q1ecm3597/M=
-        selected: false
-        status: Unchecked
-      - offset: 1448
-        length: 179
+        selected: true
+        status: Solved
+      - offset: 1436
+        length: 151
         placeholder_text: |-
           catch (e: NetworkFail) {
                 println("Network Problem $e")
@@ -28,31 +28,34 @@ files:
           offset: 1448
         initialized_from_dependency: false
         encrypted_possible_answer: GXEiIywzviP21ZdOQpXIhBpcmz3lJ1JrZsWC/tgQSlxrZFlyQwJzRf1NGZ5cwZAZ20p/D/qcRrJgYrUULioxTiDQ/cSR+XcCEWYHV7kE+Q8=
-        selected: false
-        status: Unchecked
-      - offset: 1724
-        length: 34
+        selected: true
+        status: Solved
+      - offset: 1684
+        length: 18
         placeholder_text: println("Network Close Failed $e")
         initial_state:
           length: 34
           offset: 1724
         initialized_from_dependency: false
         encrypted_possible_answer: BPrP/APd52Muua1Znakw8jwux3+mGGw9Q1ecm3597/M=
-        selected: false
-        status: Unchecked
-      - offset: 1993
-        length: 30
+        selected: true
+        status: Solved
+      - offset: 1937
+        length: 18
         placeholder_text: println("Database Problem $e")
         initial_state:
           length: 30
           offset: 1993
         initialized_from_dependency: false
         encrypted_possible_answer: BPrP/APd52Muua1Znakw8jwux3+mGGw9Q1ecm3597/M=
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 02 Sep 2024 17:45:47 UTC"
 record: -1

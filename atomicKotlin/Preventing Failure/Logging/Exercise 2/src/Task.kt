@@ -53,7 +53,7 @@ fun transact(level: Int): Status {
   try {
     db.open(1, level)
   } catch (e: DBOpenFail) {
-    println("Database Problem $e")
+    logger.error("$e")
     return Failed
   }
   fun transfer(net: NetConnection): Status {
@@ -61,16 +61,16 @@ fun transact(level: Int): Status {
       net.open(2, level)
       db.write(net.read(), 3, level)
     } catch (e: NetworkFail) {
-      println("Network Problem $e")
+      logger.error("$e")
       return Failed
     } catch (e: DBWriteFail) {
-      println("Database Write Failed $e")
+      logger.error("$e")
       return Failed
     } finally {
       try {
         net.close(4, level)
       } catch (e: NetworkCloseFail) {
-        println("Network Close Failed $e")
+        logger.error("$e")
         return Failed
       }
     }
@@ -85,7 +85,7 @@ fun transact(level: Int): Status {
     try {
       db.close(5, level)
     } catch (e: DBCloseFail) {
-      println("Database Problem $e")
+      logger.error("$e")
       throw e
     }
   }
