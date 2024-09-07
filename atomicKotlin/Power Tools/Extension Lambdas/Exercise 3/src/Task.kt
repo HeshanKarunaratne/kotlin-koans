@@ -21,16 +21,25 @@ class SprayCleanser : Cleanser() {
   }
 }
 
-fun cleanser(): Cleanser {
-  TODO()
+fun cleanser(formula: Cleanser.() -> Unit): Cleanser {
+  val result = Cleanser()
+  result.selectContainer()
+  result.formula()
+  result.sealContainer()
+  return result
 }
 
-fun sprayCleanser(): SprayCleanser {
-  TODO()
+fun sprayCleanser(formula: SprayCleanser.() -> Unit): SprayCleanser {
+  val result = SprayCleanser()
+  result.selectContainer()
+  result.selectSprayer()
+  result.formula()
+  result.sealContainer()
+  return result
 }
 
 fun main() {
-/*
+
   val c: Cleanser = cleanser {
     detergent()
     abrasive()
@@ -45,5 +54,5 @@ fun main() {
   sc eq "[Container selected, " +
     "Sprayer selected, detergent, " +
     "ammonia, water, Container sealed]"
-*/
+
 }

@@ -943,7 +943,135 @@ class SampleTest {
 }
 ```
 
+#### Extension Lambdas
+```kt
+val va: (String, Int) -> String = { str, n -> str.repeat(n) + str.repeat(n) }
+val vb: String.(Int) -> String = { this.repeat(it) + repeat(it) }
+
+va("Vanbo", 2) eq "VanboVanboVanboVanbo"
+"Vanbo".vb(2) eq "VanboVanboVanboVanbo"
+vb("Vanbo", 2) eq "VanboVanboVanboVanbo"
+
+// buildList and buildMap
+val characters: List<String> = buildList {
+    add("Chars:")
+    ('a'..'d').forEach { add("$it") }
+}
+
+val charmap: Map<Char, Int> = buildMap {
+    ('A'..'F').forEachIndexed { n, ch ->
+        put(ch, n)
+    }
+}
+
+characters eq "[Chars:, a, b, c, d]"
+charmap eq "{A=0, B=1, C=2, D=3, E=4, F=5}"
+```
+
+#### Scoped Functions
+
+```txt
+1. let
+Context object: it
+Return value: Lambda result
+
+2. run
+Context object: this
+Return value: Lambda result
+
+3. with
+Context object: this
+Return value: Lambda result
+
+4. apply
+Context object: this
+Return value: The object itself
+
+5. also
+Context object: it
+Return value: The object itself
+```
+
+```kt
+// let
+val name: String = "Kotlin"
+val result = name.let {
+    println("Name length: ${it.length}")
+    it.length
+}
+
+// run
+val name2 = "Kotlin"
+val result = name2.run {
+    println("Name: $this")
+    length // returns length
+}
+
+// with
+val name3 = "Kotlin"
+val result = with(name3) {
+    println("Name is $this")
+    length
+}
+
+// apply
+class User() {
+    var name: String = ""
+    var age: Int = 0
+}
+
+val user = User().apply {
+    name = "Alice"
+    age = 30
+}
+
+// also
+val name = "Kotlin".also {
+    println("Name length is: ${it.length}")
+}
+```
+
+#### Generics
+```kt
+// Type checking with inline reified
+// inline: It helps in reducing overhead and enables special behaviors in generic functions, like type checking
+// reified: When we use the reified keyword in an inline function, it allows us to check or access the type information of the generic parameter T at runtime
+
+inline fun <reified T> check(t: Any) = t is T
+check<String>("1") eq true
+check<Int>("1") eq false
+
+
+// Covariant Return Type
+interface Parent
+interface Child : Parent
+
+interface  X {
+    fun f(): Parent
+}
+
+interface Y : X {
+    override fun f(): Child
+}
+```
+
+#### Invariance, Contravariance. Covariance
+```txt
+Box<T> (Invariance):
+
+
+class Box<T>(private var contents: T) {
+  fun put(item: T) { contents = item }
+  fun get(): T = contents
+}
+
+
+```
+
+
+
 #### Lambdas
 ```kt
 
 ```
+

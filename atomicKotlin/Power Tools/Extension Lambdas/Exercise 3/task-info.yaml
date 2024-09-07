@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 500
-        length: 37
+        length: 169
         placeholder_text: |-
           fun cleanser(): Cleanser {
             TODO()
@@ -14,10 +14,10 @@ files:
           offset: 500
         initialized_from_dependency: false
         encrypted_possible_answer: PGZ0ozqAeVRGWLmEvEGRv8lO1AydBfHtGPfviKjxK4V7B5dG1pe/fLdorKB5T7bnovzmaaVd7BSxf0A9gB22skDKyq8DJ51tbYlPRlKSusy7yONbf/19s2B9D5aH3vOKozVEUsVroAwCMFWoMcFv6ieCrq5how2I1IsFpTvhIx+UR49e6zPJQ3CAxWQf1Q1HOG6M6Ez/LbfEugl0pRqIDGXeuzgiq7ka7xcDQtb+yXk=
-        selected: false
-        status: Unchecked
-      - offset: 539
-        length: 47
+        selected: true
+        status: Solved
+      - offset: 671
+        length: 214
         placeholder_text: |-
           fun sprayCleanser(): SprayCleanser {
             TODO()
@@ -27,10 +27,10 @@ files:
           offset: 539
         initialized_from_dependency: false
         encrypted_possible_answer: mQU/Pe30RyQy6CnvcvyMW+qKBAFGlgimrWgnQYmp2mXbm4hQGYiP5VDYbYamoLjBAJS120x8STDjLa8XtIg3CbepK+/lW7VugOP37vMWlU0RGMG7DHf6vyms0hChbYTxvN5lOdoN7CJCsAzvPgpixpeFJJ6UpH+IQ8qRr5t1pmou5TDn46Al3AIxvaL2TOv1v3MbsPBcTF5FaWUodhxEAVBwF3zvcEwuBEfJC45UeURgbWqgVsAptqqb1l4CpUgsVHZ+n08S2LE1+dYHFDoJN8jjnq6zBbAfr7wufXWK+pc=
-        selected: false
-        status: Unchecked
-      - offset: 601
-        length: 349
+        selected: true
+        status: Solved
+      - offset: 900
+        length: 345
         placeholder_text: |-
           /*
             val c: Cleanser = cleanser {
@@ -53,11 +53,14 @@ files:
           offset: 601
         initialized_from_dependency: false
         encrypted_possible_answer: w0rL13WSgtIhw2eOkTHtARZPnP7rCeGVPp36uJNfGG3jhr0P05PMkpOeHOrLN8RMbS/EDpfNeXJkmoodh5KKyZD/OK+85hiC8P0vlPRNdPmHHds5l1sXt8kUuh4tO3kuOOGZouUPEX3kKeTGwWGvW+jRQaOgkmXWpXyQSvgoqNluhXCpd8oZQ+d4EU0p1Kw+5xaPA4rCkrqwVRLLyMXEkjVEGBAXqDThm0kbpa+M/ukTUtXvDR4CDYXKC7QRSJ9TgFULGSHLbHNBnLR4AjHqLDus9pVulV6pdPo+oyk9o8ELwUYaIiYZ71JJNZ/+3QE9NeExzhL3GQMEw8DuFHwS715+WzEaq+Ct2IAMmYQ3/V0b7IjPvCD6bjz8ltoYLi4TGoDO4Xr7ifK1OCirbaVcN6LSZ8hZefS3AW4ekaiLkZKawO4dl8TUGwyh83sMGD0JSsu6Mr/Aer6K2/loUT4vhg==
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 06 Sep 2024 17:34:46 UTC"
 record: -1

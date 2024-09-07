@@ -5,19 +5,25 @@ import atomictest.eq
 fun createString(
   build: StringBuilder.() -> Unit
 ): String {
-  TODO()
+  val sb = StringBuilder()
+  sb.build()
+  return sb.toString()
 }
 
 fun <T> createList(
   build: ArrayList<T>.() -> Unit
 ): List<T> {
-  TODO()
+  val list =  ArrayList<T>()
+  list.build()
+  return list
 }
 
 fun <K, V> createMap(
   build: HashMap<K, V>.() -> Unit
 ): Map<K, V> {
-  TODO()
+  val map = HashMap<K,V>()
+  map.build()
+  return map
 }
 
 @OptIn(ExperimentalStdlibApi::class)
