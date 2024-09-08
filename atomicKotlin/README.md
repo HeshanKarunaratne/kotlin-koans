@@ -1056,18 +1056,34 @@ interface Y : X {
 ```
 
 #### Invariance, Contravariance. Covariance
-```txt
-Box<T> (Invariance):
 
+1. Box<T> (Invariance)
+- Invariance: The type parameter T is invariant, meaning that Box<T> can only work with a specific type T and cannot be used with a subtype or supertype of T
 
+```kt
 class Box<T>(private var contents: T) {
   fun put(item: T) { contents = item }
   fun get(): T = contents
 }
-
-
 ```
 
+2. InBox<in T> (Contravariance)
+- Contravariance: The in keyword makes the type parameter T contravariant. This means that InBox<T> can accept objects of type T or any of its supertypes. However, you can only put items into the InBox, not get them
+
+```kt
+class InBox<in T>(private var contents: T) {
+    fun put(item: T) { contents = item }
+}
+```
+
+2. OutBox<in T> (Covariance)
+- Covariance: The out keyword makes the type parameter T covariant. This means that OutBox<T> can return objects of type T or any of its subtypes. However, you can only retrieve items from the OutBox, not put them in.
+
+```kt
+class InBox<in T>(private var contents: T) {
+    fun put(item: T) { contents = item }
+}
+```
 
 
 #### Lambdas

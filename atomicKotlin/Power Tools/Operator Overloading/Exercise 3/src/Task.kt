@@ -2,10 +2,41 @@
 package operatorOverloadingExercise3
 import atomictest.*
 
-class Repository
+class Repository<T>(val initSize: Int = 10) {
+  private val list = MutableList<T?>(initSize) { null }
+
+  operator fun plusAssign(rv: T) {
+    val i = list.indexOf(null)
+    if (i == -1) list += rv
+    else list[i] = rv
+  }
+
+  operator fun set(n: Int, rv: T) {
+    require(n >= 0 && n < list.size) {
+      "set() index $n out of range"
+    }
+    requireNotNull(list[n]) {
+      "set() accessing null element"
+    }
+    list[n] = rv
+  }
+
+  operator fun get(n: Int): T {
+    require(n >= 0 && n < list.size) {
+      "get() index $n out of range"
+    }
+    val result = requireNotNull(list[n]) {
+      "get() accessing null element"
+    }
+    return result
+  }
+
+  override fun toString() =
+    list.joinToString(", ")
+}
 
 fun main() {
-/*
+
   val r = Repository<Int>(5)
   (1..7).forEach {
     r += it * 10
@@ -40,5 +71,5 @@ fun main() {
     r[4]: 99
     10, 20, 30, 40, 99, 60, 70
   """
-*/
+
 }
