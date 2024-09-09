@@ -4,17 +4,17 @@ files:
     visible: true
     placeholders:
       - offset: 108
-        length: 19
+        length: 144
         placeholder_text: class Configuration
         initial_state:
           length: 19
           offset: 108
         initialized_from_dependency: false
         encrypted_possible_answer: skPELydm8gT5Wh1dRyRgyPcDlTU+a0TVw5AHmP0rTwGYR3vvO1EU6eN5jcOJMxSalobGHieGaUqrcfXWdK1SP0b47QvW9551G0JAp7E1m/sUnGX0IrPs/sFcMM3nKBrTpHD4Fhdc6Y4M5G8h33s/k+ZNGkkABUIOTGqTZ/W0QkzTdy9UD3AjiJcBfIhr4PD6
-        selected: false
-        status: Unchecked
-      - offset: 142
-        length: 329
+        selected: true
+        status: Solved
+      - offset: 267
+        length: 389
         placeholder_text: |-
           /*
             val config = Configuration(mutableMapOf(
@@ -34,11 +34,14 @@ files:
           offset: 142
         initialized_from_dependency: false
         encrypted_possible_answer: zxZLmQa6RDPGSnJssMNVPOrYXJf0RVcf9kdqEycT5QCzBm3+twawUD9GgLDKn+vjSDBh/UYimnHwzVddhMLTceXbw/2fKoV4+ikMcbNtBJ12ZoqxjeCtp7JTsjfmXUFH6OLexIRA50CoiP9NJuan2+HBrx5lSlQLJyviunbEdXZgCRDlxUk9Eqn80wcwA5ulX5hsU5ANT12Ix3FD8J2vNRS/JRBykGo+zSz4ZkSWYD3zYt+6LQEilQYvj6Cx6TpAzObFaUuuMub72IIF3xBn+GE3OQbSIH60CXxq2WArynvhH8j8s+YyEO28H+ouEKZHFkOHRguqeCd3oVZtZ/ViflC6vXes41TfngBB5C2jiyxi2cD8ZzrPnpkX84jdNqwB0TJd/zY7RYIYw/amYJlBvlbG0jNTeF5JzH55tStBPuh06SHQaI/b/nxBObMcdU3u
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 09 Sep 2024 15:44:41 UTC"
 record: -1

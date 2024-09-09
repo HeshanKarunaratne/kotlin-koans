@@ -1085,7 +1085,6 @@ class InBox<in T>(private var contents: T) {
 }
 ```
 
-
 #### Lambdas
 ```kt
 

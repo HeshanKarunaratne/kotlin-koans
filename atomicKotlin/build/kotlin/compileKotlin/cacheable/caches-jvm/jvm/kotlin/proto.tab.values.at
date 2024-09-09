@@ -1,4 +1,20 @@
-TruncationKtTwoArgLambdaKtTypesKtUnderscoreKtUnexpectedKtUnitReturnKtUnitReturnTypeKtUseALibraryKtUseBeanClassKt
+ngeKtForWithRangesKtFullyQualifyKtGenerateSequence1KtGenerateSequence2KtGenericTestKt
+GetOrPutKt
+GetValueKt	GroupByKtGroupByVsFilterKt	HamsterKt	HasCharKtHelloKtHelloWorldKtHiddenArrayListKtIf1KtIf2KtIf3KtIf4KtIf5KtIf6KtIfExpressionKt
+IfResultKtImportClassKtImportEverythingKtImportNameChangeKtImportPythagoreanKt
+ImprovedKt
+InStringKtIncrementOperatorKtIndexIntoStringKt
+InferIntKtInferenceKtIntDivisionTruncatesKtIntRangesKtIntegerOverflowKtInterestingSessionsKtIntroducingCaptureKtIntroducingNullKtIsKeywordKtIterateOverStringKtIterationVsMembershipKt
+JavaListKtJoinToStringKtKotlinCheckedKtLabeledReturnKtLambdaAndNamedArgsKt
+LambdaItKtLambdaTypeInferenceKtListCollectionKtListIndicesMapKt
+ListInitKtListOfKtListOfNothingKtListOfStringsKtListUsefulFunctionKtListsKtLocalExtensionsKtLocalFunctionReferenceKtLocalFunctionsKtLongConstantsKtLoopWithIndexKtMainArgConversionKt
+MainArgsKt	MappingKtMapsKtMatchingAgainstValsKtMembershipInRangeKtMembershipKtMembershipUsingBoundsKt	ModulusKtMultipleArgsKtMultipleListReferencesKtMultipleListRefsKtMultipleRefKtMultiplyByFourKtMultiplyByThreeKtMultiplyByTwoKtMutableListKtMutableMapsKtMutableSetKtNPEOnPlatformTypeKt
+NewAngleKtNoComputationYetKtNonNullAssertCallKtNonNullAssertKtNullInMapsKtNullableFunctionKtNullableInMapKtNullableReturnKtNullableTypesKtNumberConversionsKtNumberSequence2KtNumberTypesKtObserveAnimalsKtOmittingParenthesesKtOneOrTheOtherKt	OpOrderKtOpOrderParensKtOpen1KtOpen2KtOperatorPlusKtOutOfBoundsKt
+OverflowKtPairDestructuringKtParameterizedTypesKtPartitionKtPostfixVsPrefixKtPredicatesKtRandomKtRangeOfIntKt
+RangeSumKtReadOnlyAndPlusKtReadOnlyCollectionsKtReadOnlyMapsKtReadonlyVsMutableListKtRecordAnimalsKtReduceAndReduceRightKtReferencesKtRemoveDuplicatesKtRepeatByIntKt
+RepeatHiKtRepeatThreeTimesKtReturnFromFunKtReturnInsideLambdaKtRunningFoldKt
+SayHelloKtSchoolDataKtScientistKtSetOperationsKtSetsKtSimilarOperationKt
+SortWithKtSpreadOperatorKtStoringLambdaKtStrTemplatesKtStringConcatenationKtStringIsNullOrKtStringIterationKtStringPlusNumberKtStringRangeKtStringTemplatesKt	StringsKtSumKtSumUsingRangeKtSumViaFoldKtTakeOrDropKtTerminalOperationsKtTestDelegationKtTestingExampleKtThreeQuotesKtToDoubleExceptionKtTopLevelPropertyKtTrace1KtTransformingMapKtTrimMarginKtTripleQuotesKtTrueOrFalseKtTruncationKtTwoArgLambdaKtTypesKtUnderscoreKtUnexpectedKtUnitReturnKtUnitReturnTypeKtUseALibraryKtUseBeanClassKt
 UseLinesKtUsingAtomicTestKtUsingLongsKtUsingTraceKtValsKtValueFromMapKtVarsKtVisibleArgsKtWhileControlKtWhileKtWhileLabeledKtWhileLoopKtWombatKtZeroArgumentsKtZipperKtZippingWithNextKt
 
 aaaAaaKt
@@ -869,9 +885,7 @@ K
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     xAssignmentKtCovariantListKtInBoxAssignmentKtOutBoxAssignmentKt
-"
-whenExpressionsExercise1TaskKt
+UnSealedKt" *     nsExercise1TaskKt
 "
 whenExpressionsExercise2TaskKt
 "
@@ -888,17 +902,7 @@ K
 withoutdefaultargumentsWithoutDefaultArgumentsKt
 "
 withoutsealedclasses
-UnSealedKt" *     xercise1TaskKt
-
-listsExercise2TaskKt
-
-listsExercise3TaskKt
-
-listsExercise4TaskKt
-!
-localFunctionsExercise1TaskKt
-!
-localFunctionsExercise2TaskKt
+UnSealedKt" *     unctionsExercise2TaskKt
 !
 localFunctionsExercise3TaskKt
 ,

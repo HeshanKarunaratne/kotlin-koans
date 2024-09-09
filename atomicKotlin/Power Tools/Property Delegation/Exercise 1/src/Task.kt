@@ -13,7 +13,9 @@ operator fun Sum.getValue(
   thisRef: Add, property: KProperty<*>
 ) = thisRef.a + thisRef.b
 
-// operator fun Sum.setValue
+operator fun Sum.setValue(thisRef: Add, property: KProperty<*>, value: Int) {
+  thisRef.a = value
+}
 
 fun main() {
   val addition = Add(144, 12)
