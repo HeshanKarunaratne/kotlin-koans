@@ -2,9 +2,12 @@
 package propertyDelegationToolsExercise4
 import atomictest.eq
 import kotlin.properties.Delegates
+import kotlin.reflect.KProperty
 
 class PositiveInt(i: Int) {
-  var n: Int = TODO() // by ...
+  var n: Int by Delegates.vetoable(i) { _, _, new ->
+    new > 0
+  }
 }
 
 fun main() {

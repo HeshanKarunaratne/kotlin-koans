@@ -1,6 +1,6 @@
 // LateInitialization/Bag.kt
 package lateinitialization
 
-interface Bag {
+fun interface Bag {
   fun setUp()
 }

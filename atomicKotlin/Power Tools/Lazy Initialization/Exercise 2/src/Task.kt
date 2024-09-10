@@ -3,10 +3,28 @@ package lazyInitializationExercise2
 import atomictest.*
 
 class Outer {
-  val s1: String = "TODO"
-  val s2: String = "TODO"
+  init {
+    trace("Outer constructor")
+  }
+
+  val s1: String by lazy {
+    trace("Initializing Outer.s1")
+    "Hi"
+  }
+  val s2: String by lazy {
+    trace("Initializing Outer.s2")
+    "Hello $s1"
+  }
+
   inner class Inner {
-    val si: String = "TODO"
+    init {
+      trace("Inner constructor")
+    }
+
+    val si: String by lazy {
+      trace("Initializing Inner.si")
+      "Howdy $s2"
+    }
   }
 }
 

@@ -26,7 +26,7 @@ fun main() {
   show(Properties::atDefinition)
   show(Properties::getter)
   show(Properties::lazyInit)
-  // TODO
+  show(Properties::never)
   trace eq """
     Compute 1
     atDefinition:
